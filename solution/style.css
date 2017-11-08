@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h1{
 
 }
@@ -22,4 +27,21 @@ h3{
 .usp-card{
   padding: 10px;
 
+}
+
+.feature-content {
+  display: block;
+}
+
+/*this needs more work*/
+.feature-image {
+  max-width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  float: left;
+  clear: left;
+}
+
+img.feature {
+  width: 100%;
 }
