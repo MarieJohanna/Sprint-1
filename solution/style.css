@@ -20,7 +20,7 @@ h3{
 }
 
 .material-icons{
-  align-content: center;
+  padding-top: 10px;
 }
 
 usp{
@@ -31,6 +31,7 @@ usp{
   width: 33%;
   float: left;
   padding: 10px;
+  text-align: center;
 }
 
 .usp-card{
