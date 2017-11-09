@@ -25,13 +25,13 @@ h3{
 
 usp{
   padding: 10px;
-  width: 33%;
-  float: left;
 }
 
-/*.usp-column{
-
-}*/
+.usp-column{
+  width: 33%;
+  float: left;
+  padding: 10px;
+}
 
 .usp-card{
   background: #6ea6df;
