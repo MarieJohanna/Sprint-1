@@ -45,17 +45,14 @@ h3{
   display: block;
 }
 
-/*this needs more work*/
 .feature-image {
   max-width: 500px;
   border-radius: 8px;
-  overflow: hidden;
-  float: left;
-  clear: left;
 }
 
 img.feature {
   width: 100%;
+  display: block;
 }
 
 @media (max-width: 767px) {
