@@ -23,15 +23,15 @@ h3{
   align-content: center;
 }
 
-.usp{
-  box-sizing: border-box;
-}
-
-.usp-column{
+usp{
   padding: 10px;
   width: 33%;
   float: left;
 }
+
+/*.usp-column{
+
+}*/
 
 .usp-card{
   background: #6ea6df;
