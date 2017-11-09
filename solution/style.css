@@ -1,0 +1,11 @@
+footer {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.footer ul {
+  float: left;
+  list-style-type: none;
+  display: inline-block;
+
+}
