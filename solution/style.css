@@ -31,37 +31,30 @@ h3{
 header {
   width: 100%;
   height: auto;
+  background-color: yellow;
+  padding: 20px;
 }
 
-.header {
-  background-color: blue;
-  height: auto;
+.logotype {
+  float:left;
+  display:inline;
+  font-size: 18px;
+  margin: 0 0 0 10px;
 }
 
 .logotype p{
   margin: 0;
-  padding: 0;
 }
 
-.logotype {
-  background-color: red;
-  float:left;
-  display:inline;
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
+nav {
+  padding: 0px;
+  margin: 0px;
+  text-align: right;
 }
 
 nav p {
   margin: 0;
   padding: 0;
-}
-nav {
-  background-color: green;
-  float:right;
-  display:inline;
-  padding: 0px;
-  margin: 0px;
 }
 
 .nav ul {
