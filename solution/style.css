@@ -1,11 +1,33 @@
-footer {
+* {
+  /*box-sizing: border-box;*/
+  font-family: sans-serif;
+  }
+
+.footer-container {
   width: 100%;
-  margin-bottom: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.footer {
+  background-color: navy;
+  width: 30%;
+  float: left;
+  padding: 20px;
+  border: 2px solid white;
+  color: white;
 }
 
 .footer ul {
   float: left;
-  list-style-type: none;
   display: inline-block;
+}
 
+.footer span {
+  text-align: left;
+  text-transform: uppercase;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
 }
