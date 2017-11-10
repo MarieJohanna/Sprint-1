@@ -29,6 +29,31 @@ h3{
 }
 
 header {
+
+  background-color: blue;
+  width: 100%;
+  height: 60px;
+}
+
+.logotype {
+  width: 150px;
+  background-color: red;
+  float:left;
+  display:inline;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+}
+
+nav {
+  background-color: green;
+  float:right;
+  display:inline;
+  width: 300px;
+  padding: 0px;
+  margin: 0px;
+  height: 60px;
   width: 100%;
   height: auto;
   background-color: yellow;
@@ -55,6 +80,7 @@ nav {
 nav p {
   margin: 0;
   padding: 0;
+
 }
 
 .nav ul {
@@ -82,10 +108,12 @@ nav p {
   width: 100%;
 }
 
+
 main {
   max-width: 1440px;
   margin: auto;
 }
+
 
 .material-icons {
   padding-top: 10px;
@@ -125,6 +153,7 @@ section#features-section .feature-content-container {
 
 section#features-section .feature-image-container {
   width: 40%;
+
 }
 
  section#features-section .feature-image-container img {
@@ -153,35 +182,29 @@ section#features-section .feature-text-container {
   width: 100%;
   height: auto;
   bottom: 0;
+  text-align: center;
 }
 
 .footer {
   background-color: navy;
   width: 33.3%;
   float: left;
-  padding: 20px;
+  padding: 0;
   border: 2px solid white;
   color: white;
-  text-align: left;
-}
-
-.footer h4 {
   text-transform: uppercase;
-  text-align: center;
 }
 
 .list {
   column-count: 2;
-  list-style-type: none;
   padding: 0;
-  display: list-item;
 }
 
 .list ul {
   padding: 0;
   list-style-type: none;
-  float: left;
-  display: inline-block;
+  display: list-item;
+  /*display: inline-block;*/
 }
 
 .list li {
@@ -190,5 +213,16 @@ section#features-section .feature-text-container {
 }
 
 .list a {
+  color: white;
+}
+
+.copyright {
+  width: 100%;
+  background-color: navy;
+  padding: 5px;
+}
+
+.copyright p {
+  text-align: center;
   color: white;
 }
