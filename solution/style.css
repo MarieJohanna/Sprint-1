@@ -1,0 +1,11 @@
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+.hero-image {
+  width: 100%;
+}
