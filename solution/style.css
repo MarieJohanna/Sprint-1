@@ -11,6 +11,12 @@ body {
   padding: 0;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 h1{
 
 }
@@ -106,18 +112,20 @@ section#features {
   width: 100%;
 }
 
-section#features.image-container {
-  float: left;
+section#features .feature-image-container {
+    width: 40%;
+    float: left;
 }
 
-/*.feature-image-container {
-  max-width: 500px;
-}*/
-
-.feature img {
+ section#features .feature-image-container img {
   display: block;
   width: 100%;
   border-radius: 8px;
+}
+
+section#features .feature-text {
+    width: 60%;
+    float: left;
 }
 
 @media (max-width: 767px) {
