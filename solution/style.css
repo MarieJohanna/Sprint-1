@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
   font-family: sans-serif;
-  }
+}
+
 html {
   font-family: sans-serif;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -73,23 +73,24 @@ nav {
 
 .hero-image {
   width: 100%;
+}
 
 .material-icons {
   padding-top: 10px;
 }
 
-usp{
+#usp {
   padding: 10px;
 }
 
-.usp-column{
+.usp-column {
   width: 33%;
   float: left;
   padding: 10px;
   text-align: center;
 }
 
-.usp-card{
+.usp-card {
   background: #6ea6df;
   opacity: 0.6;
   padding: 10px;
@@ -121,8 +122,8 @@ usp{
 
 .footer-container {
   width: 100%;
+  height: auto;
   bottom: 0;
-  position: fixed;
   background-color: navy;
 }
 
@@ -135,24 +136,28 @@ usp{
   text-align: left;
 }
 
-.footer ul {
-  float: left;
-  display: inline-block;
-}
-
 .footer span {
   text-transform: uppercase;
 }
 
 .list {
   column-count: 2;
+  list-style-type: none;
+  padding: 0;
+  display: list-item;
 }
 
 .list ul {
   padding: 0;
   list-style-type: none;
+  float: left;
+  display: inline-block;
 }
 
 .list li {
   display: list-item;
+}
+
+.list a {
+  color: white;
 }
