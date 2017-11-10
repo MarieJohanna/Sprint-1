@@ -14,6 +14,9 @@ header {
   float:left;
   display:inline;
   font-size: 18px;
+  margin: 0;
+  padding: 0;
+  height: 60px;
 }
 
 nav {
@@ -23,6 +26,7 @@ nav {
   width: 300px;
   padding: 0px;
   margin: 0px;
+  height: 60px;
 }
 
 .nav ul {
