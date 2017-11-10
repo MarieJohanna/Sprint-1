@@ -124,10 +124,10 @@ nav {
   width: 100%;
   height: auto;
   bottom: 0;
-  background-color: navy;
 }
 
 .footer {
+  background-color: navy;
   width: 33.3%;
   float: left;
   padding: 20px;
@@ -136,8 +136,9 @@ nav {
   text-align: left;
 }
 
-.footer span {
+.footer h4 {
   text-transform: uppercase;
+  text-align: center;
 }
 
 .list {
@@ -156,6 +157,7 @@ nav {
 
 .list li {
   display: list-item;
+  padding: 0;
 }
 
 .list a {
