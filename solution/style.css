@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 html {
@@ -127,9 +126,9 @@ section#features .feature-image-container {
 }
 
  section#features .feature-image-container img {
-  display: block;
   width: 100%;
-  border-radius: 8px;
+  display: block;
+  /*border-radius: 8px;*/
 }
 
 section#features .feature-text {
