@@ -31,6 +31,7 @@ h3{
 header {
   background-color: blue;
   width: 100%;
+  overflow: auto;
 }
 
 .logotype {
@@ -54,6 +55,7 @@ nav {
   width: 100%;
   height: auto;
   padding: 20px;
+  position: fixed;
 }
 
 .logotype {
@@ -157,13 +159,16 @@ nav p {
 .nav li a:visited {
 }
 
+.hero {
+  position: relative;
+}
+
 .hero-image {
   /*background-image: url(https://static.pexels.com/photos/126407/pexels-photo-126407.jpeg);*/
   width: 100%;
   /*background-position: right;
   background-repeat: no-repeat;*/
   background-size: cover;
-  position: relative;
 }
 
 .hero-text {
