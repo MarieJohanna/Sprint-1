@@ -102,13 +102,17 @@ main {
   box-shadow: 2px 2px 10px grey;
 }
 
-section.features {
+section#features {
   width: 100%;
 }
 
-.feature-image-container {
-  max-width: 500px;
+section#features.image-container {
+  float: left;
 }
+
+/*.feature-image-container {
+  max-width: 500px;
+}*/
 
 .feature img {
   display: block;
