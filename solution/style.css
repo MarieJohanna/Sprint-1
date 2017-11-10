@@ -75,6 +75,10 @@ nav {
   width: 100%;
 }
 
+main {
+  max-width: 1440px;
+}
+
 .material-icons {
   padding-top: 10px;
 }
@@ -98,9 +102,17 @@ nav {
   box-shadow: 2px 2px 10px grey;
 }
 
-.feature-image-container {
-  max-width: 500px;
+section#features {
+  width: 100%;
 }
+
+section#features.image-container {
+  float: left;
+}
+
+/*.feature-image-container {
+  max-width: 500px;
+}*/
 
 .feature img {
   display: block;
