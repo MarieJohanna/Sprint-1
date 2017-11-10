@@ -84,6 +84,7 @@ nav p {
 
 main {
   max-width: 1440px;
+  margin: auto;
 }
 
 .material-icons {
@@ -109,26 +110,30 @@ main {
   box-shadow: 2px 2px 10px grey;
 }
 
-section#features {
+section#features-section {
   width: 100%;
 }
 
-section#features .feature-content-container {
+section#features-section .feature-block {
+  padding: 0 20px;
+}
+
+section#features-section .feature-content-container {
   float: left;
   padding: 20px;
 }
 
-section#features .feature-image-container {
+section#features-section .feature-image-container {
   width: 40%;
 }
 
- section#features .feature-image-container img {
+ section#features-section .feature-image-container img {
   width: 100%;
   display: block;
   /*border-radius: 8px;*/
 }
 
-section#features .feature-text-container {
+section#features-section .feature-text-container {
     width: 60%;
 }
 
