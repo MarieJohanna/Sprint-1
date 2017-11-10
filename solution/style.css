@@ -113,9 +113,13 @@ section#features {
   width: 100%;
 }
 
+section#features .feature-content-container {
+  float: left;
+  padding: 20px;
+}
+
 section#features .feature-image-container {
-    width: 40%;
-    float: left;
+  width: 40%;
 }
 
  section#features .feature-image-container img {
@@ -124,9 +128,8 @@ section#features .feature-image-container {
   /*border-radius: 8px;*/
 }
 
-section#features .feature-text {
+section#features .feature-text-container {
     width: 60%;
-    float: left;
 }
 
 @media (max-width: 767px) {
