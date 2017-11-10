@@ -148,11 +148,11 @@ usp{
   column-count: 2;
 }
 
-ul {
+.list ul {
   padding: 0;
   list-style-type: none;
 }
 
-li {
+.list li {
   display: list-item;
 }
