@@ -29,14 +29,12 @@ h3{
 }
 
 header {
-
   background-color: blue;
   width: 100%;
-  height: 60px;
 }
 
 .logotype {
-  width: 150px;
+  width: auto;
   background-color: red;
   float:left;
   display:inline;
@@ -47,7 +45,6 @@ header {
 }
 
 nav {
-  background-color: green;
   float:right;
   display:inline;
   width: 300px;
@@ -56,7 +53,6 @@ nav {
   height: 60px;
   width: 100%;
   height: auto;
-  /*background-color: yellow;*/
   padding: 20px;
 }
 
@@ -65,6 +61,7 @@ nav {
   display:inline;
   font-size: 20px;
   margin: 0 0 0 10px;
+  height: auto;
   /*background-color: red;*/
 }
 
@@ -74,9 +71,14 @@ nav {
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: inline;
 }
 
+p.dropbtn{
+  width: 10px;;
+
+
+}
 .dropbtn {
     /*background-color: black;*/
     color: black;
@@ -86,7 +88,7 @@ nav {
     cursor: pointer;
     font-weight: normal;
     margin: auto;
-    text-align: center;
+    width: 10px;
 }
 
 .dropdown-content {
@@ -118,6 +120,7 @@ nav {
   text-align: right;
   background-color: blue;
   width: 100%;
+  height: auto;
 }
 
 nav p {
@@ -126,10 +129,15 @@ nav p {
 
 }
 
+.list-nav {
+
+}
+
 .nav ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+  border: 0px;
   background: purple;
   display: inline;
 }
