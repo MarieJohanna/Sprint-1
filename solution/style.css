@@ -158,12 +158,25 @@ nav p {
 }
 
 .hero-image {
+  background-image: url(https://static.pexels.com/photos/126407/pexels-photo-126407.jpeg);
   width: 100%;
+  /*background-position: right;
+  background-repeat: no-repeat;*/
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: right;
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  
 }
 
 
 main {
-  max-width: 1440px;
+  max-width: 1025px;
   margin: auto;
 }
 
@@ -197,6 +210,7 @@ section#features-section {
 
 section#features-section .feature-block {
   padding: 0 20px;
+
 }
 
 section#features-section .feature-content-container {
@@ -205,7 +219,7 @@ section#features-section .feature-content-container {
 }
 
 section#features-section .feature-image-container {
-  width: 40%;
+  width: 50%;
 
 }
 
@@ -216,7 +230,7 @@ section#features-section .feature-image-container {
 }
 
 section#features-section .feature-text-container {
-    width: 60%;
+    width: 50%;
 }
 
 @media (max-width: 767px) {
