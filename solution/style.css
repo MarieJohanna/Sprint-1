@@ -24,39 +24,30 @@ h3{
 }
 
 header {
-  width: 100%;
-  height: auto;
-}
-
-.header {
   background-color: blue;
-  height: auto;
-}
-
-.logotype p{
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  height: 60px;
 }
 
 .logotype {
+  width: 150px;
   background-color: red;
   float:left;
   display:inline;
   font-size: 18px;
   margin: 0;
   padding: 0;
+  height: 60px;
 }
 
-nav p {
-  margin: 0;
-  padding: 0;
-}
 nav {
   background-color: green;
   float:right;
   display:inline;
+  width: 300px;
   padding: 0px;
   margin: 0px;
+  height: 60px;
 }
 
 .nav ul {
@@ -84,10 +75,6 @@ nav {
   width: 100%;
 }
 
-main {
-  max-width: 1440px;
-}
-
 .material-icons {
   padding-top: 10px;
 }
@@ -111,17 +98,9 @@ main {
   box-shadow: 2px 2px 10px grey;
 }
 
-section#features {
-  width: 100%;
-}
-
-section#features.image-container {
-  float: left;
-}
-
-/*.feature-image-container {
+.feature-image-container {
   max-width: 500px;
-}*/
+}
 
 .feature img {
   display: block;
@@ -145,35 +124,29 @@ section#features.image-container {
   width: 100%;
   height: auto;
   bottom: 0;
+  text-align: center;
 }
 
 .footer {
   background-color: navy;
   width: 33.3%;
   float: left;
-  padding: 20px;
+  padding: 0;
   border: 2px solid white;
   color: white;
-  text-align: left;
-}
-
-.footer h4 {
   text-transform: uppercase;
-  text-align: center;
 }
 
 .list {
   column-count: 2;
-  list-style-type: none;
   padding: 0;
-  display: list-item;
 }
 
 .list ul {
   padding: 0;
   list-style-type: none;
-  float: left;
-  display: inline-block;
+  display: list-item;
+  /*display: inline-block;*/
 }
 
 .list li {
@@ -182,5 +155,16 @@ section#features.image-container {
 }
 
 .list a {
+  color: white;
+}
+
+.copyright {
+  width: 100%;
+  background-color: navy;
+  padding: 5px;
+}
+
+.copyright p {
+  text-align: center;
   color: white;
 }
