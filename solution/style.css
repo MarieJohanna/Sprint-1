@@ -197,14 +197,14 @@ section#features-section .feature-text-container {
 
 .list {
   column-count: 2;
-  padding: 0;
+  padding: 10px;
 }
 
 .list ul {
   padding: 0;
   list-style-type: none;
   display: list-item;
-  /*display: inline-block;*/
+  margin: 0;
 }
 
 .list li {
@@ -219,10 +219,17 @@ section#features-section .feature-text-container {
 .copyright {
   width: 100%;
   background-color: navy;
-  padding: 5px;
+  padding: 10px;
 }
 
 .copyright p {
   text-align: center;
   color: white;
+}
+
+.list li a:link,
+.list li a:hover,
+.list li a:active,
+.list li a:active {
+  text-decoration: none;
 }
