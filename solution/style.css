@@ -29,14 +29,12 @@ h3{
 }
 
 header {
-
   background-color: blue;
   width: 100%;
-  height: 60px;
 }
 
 .logotype {
-  width: 150px;
+  width: auto;
   background-color: red;
   float:left;
   display:inline;
@@ -47,7 +45,6 @@ header {
 }
 
 nav {
-  background-color: green;
   float:right;
   display:inline;
   width: 300px;
@@ -56,25 +53,74 @@ nav {
   height: 60px;
   width: 100%;
   height: auto;
-  background-color: yellow;
   padding: 20px;
 }
 
 .logotype {
   float:left;
   display:inline;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0 0 0 10px;
+  height: auto;
+  /*background-color: red;*/
 }
 
 .logotype p{
   margin: 0;
 }
 
+.dropdown {
+    position: relative;
+    display: inline;
+}
+
+p.dropbtn{
+  width: 10px;;
+
+
+}
+.dropbtn {
+    /*background-color: black;*/
+    color: black;
+    padding: 0px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: normal;
+    margin: auto;
+    width: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+}
+
 nav {
   padding: 0px;
   margin: 0px;
   text-align: right;
+  background-color: blue;
+  width: 100%;
+  height: auto;
 }
 
 nav p {
@@ -83,10 +129,17 @@ nav p {
 
 }
 
+.list-nav {
+
+}
+
 .nav ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+  border: 0px;
+  background: purple;
+  display: inline;
 }
 
 .nav li {
@@ -211,14 +264,14 @@ section#features-section .feature-text-container {
 
 .list {
   column-count: 2;
-  padding: 0;
+  padding: 10px;
 }
 
 .list ul {
   padding: 0;
   list-style-type: none;
   display: list-item;
-  /*display: inline-block;*/
+  margin: 0;
 }
 
 .list li {
@@ -233,10 +286,17 @@ section#features-section .feature-text-container {
 .copyright {
   width: 100%;
   background-color: navy;
-  padding: 5px;
+  padding: 10px;
 }
 
 .copyright p {
   text-align: center;
   color: white;
+}
+
+.list li a:link,
+.list li a:hover,
+.list li a:active,
+.list li a:active {
+  text-decoration: none;
 }
