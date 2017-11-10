@@ -238,18 +238,6 @@ section#features-section .feature-text-container {
     width: 50%;
 }
 
-@media (max-width: 767px) {
-  .usp-column{
-    width: 100%;
-  }
-}
-
-@media (min-width: 767px) {
-  .usp-column {
-    width: 33%;
-  }
-}
-
 .footer-container {
   width: 100%;
   height: auto;
@@ -304,4 +292,21 @@ section#features-section .feature-text-container {
 .list li a:active,
 .list li a:active {
   text-decoration: none;
+}
+
+/*BREAKPOINTS:
+mobile: <= 480px
+tablet: > 480px and < = 960px
+desktop: > 960px*/
+
+@media (max-width: 480px) {
+  .usp-column{
+    width: 100%;
+  }
+}
+
+@media (min-width: 961px) {
+  .usp-column {
+    width: 33%;
+  }
 }
