@@ -253,10 +253,12 @@ section#features-section .feature-image img {
   text-decoration: none;
 }
 
+
 /*BREAKPOINTS:
 mobile: <= 480px
 tablet: > 480px and < = 960px
 desktop: > 960px*/
+
 
 /*IF MOBILE*/
 @media (max-width: 480px) {
