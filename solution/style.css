@@ -29,14 +29,14 @@ h3{
 }
 
 header {
-  background-color: blue;
+  background-color: white;
   width: 100%;
   overflow: auto;
+
 }
 
 .logotype {
   width: auto;
-  background-color: red;
   float:left;
   display:inline;
   font-size: 18px;
@@ -56,6 +56,7 @@ nav {
   height: auto;
   padding: 20px;
   position: fixed;
+  overflow: hidden;
 }
 
 .logotype {
@@ -71,37 +72,33 @@ nav {
   margin: 0;
 }
 
-.dropdown {
-    position: relative;
-    display: inline;
-}
-
-p.dropbtn{
-  width: 10px;;
-
-
-}
+/* Dropdown Button */
 .dropbtn {
-    /*background-color: black;*/
-    color: black;
-    padding: 0px;
-    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
     border: none;
     cursor: pointer;
-    font-weight: normal;
-    margin: auto;
-    width: 10px;
 }
 
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    width: 100%;
+    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
+/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -109,18 +106,24 @@ p.dropbtn{
     display: block;
 }
 
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown-content a:hover {
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 
 nav {
   padding: 0px;
   margin: 0px;
   text-align: right;
-  background-color: blue;
+  background-color: white;
   width: 100%;
   height: auto;
 }
@@ -160,7 +163,7 @@ nav p {
 }
 
 .hero {
-  position: relative;
+
 }
 
 .hero-image {
@@ -169,6 +172,8 @@ nav p {
   /*background-position: right;
   background-repeat: no-repeat;*/
   background-size: cover;
+
+
 }
 
 .hero-text {
@@ -176,7 +181,6 @@ nav p {
   position: absolute;
   top: 15%;
   right: 15%;
-
 }
 
 
@@ -229,7 +233,7 @@ section#features-section .feature-image-container {
 
 }
 
- section#features-section .feature-image-container img {
+section#features-section .feature-image-container img {
   width: 100%;
   display: block;
   /*border-radius: 8px;*/
@@ -237,18 +241,6 @@ section#features-section .feature-image-container {
 
 section#features-section .feature-text-container {
     width: 50%;
-}
-
-@media (max-width: 767px) {
-  .usp-column{
-    width: 100%;
-  }
-}
-
-@media (min-width: 767px) {
-  .usp-column {
-    width: 33%;
-  }
 }
 
 .footer-container {
@@ -305,4 +297,21 @@ section#features-section .feature-text-container {
 .list li a:active,
 .list li a:active {
   text-decoration: none;
+}
+
+/*BREAKPOINTS:
+mobile: <= 480px
+tablet: > 480px and < = 960px
+desktop: > 960px*/
+
+@media (max-width: 480px) {
+  .usp-column{
+    width: 100%;
+  }
+}
+
+@media (min-width: 961px) {
+  .usp-column {
+    width: 33%;
+  }
 }
