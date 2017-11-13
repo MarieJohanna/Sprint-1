@@ -31,83 +31,58 @@ h3{
 header {
   background-color: white;
   width: 100%;
-  overflow: auto;
+}
 
+.container-header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: white;
+  justify-content: space-between;
 }
 
 .logotype {
-  width: auto;
-  float:left;
-  display:inline;
   font-size: 18px;
   margin: 0;
   padding: 0;
-  height: 60px;
-}
-
-nav {
-  float:right;
-  display:inline;
-  width: 300px;
-  padding: 0px;
-  margin: 0px;
-  height: 60px;
-  width: 100%;
-  height: auto;
-  padding: 20px;
-  position: fixed;
-  overflow: hidden;
-}
-
-.logotype {
-  float:left;
-  display:inline;
-  font-size: 20px;
-  margin: 0 0 0 10px;
-  height: auto;
-  /*background-color: red;*/
+  background: red;
 }
 
 .logotype p{
   margin: 0;
 }
 
-/* Dropdown Button */
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+    background-color: transparent;
+    font-size: 18px;
     border: none;
     cursor: pointer;
+    color: black;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
-    position: relative;
-    display: inline-block;
+    display: flex;
 }
 
-/* Dropdown Content (Hidden by Default) */
+
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color: white;
+    width: 2000px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-}
+  }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: blue}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -116,26 +91,12 @@ nav {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-
-nav {
-  padding: 0px;
-  margin: 0px;
-  text-align: right;
-  background-color: white;
-  width: 100%;
-  height: auto;
-}
-
-nav p {
-  margin: 0;
-  padding: 0;
-
+    background-color: transparent;
+    color: blue;
 }
 
 .list-nav {
-
+  background-color: purple;
 }
 
 .nav ul {
@@ -143,7 +104,6 @@ nav p {
   padding: 0px;
   margin: 0px;
   border: 0px;
-  background: purple;
   display: inline;
 }
 
@@ -219,28 +179,22 @@ section#features-section {
 }
 
 section#features-section .feature-block {
-  padding: 0 20px;
-
-}
-
-section#features-section .feature-content-container {
-  float: left;
-  padding: 20px;
-}
-
-section#features-section .feature-image-container {
-  width: 50%;
-
-}
-
-section#features-section .feature-image-container img {
   width: 100%;
-  display: block;
-  /*border-radius: 8px;*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-section#features-section .feature-text-container {
-    width: 50%;
+section#features-section .feature-image {
+  width: 50%;
+}
+
+section#features-section .feature-text {
+  width: 50%;
+}
+
+section#features-section .feature-image img {
+  width: 100%;
 }
 
 .footer-container {
@@ -299,17 +253,35 @@ section#features-section .feature-text-container {
   text-decoration: none;
 }
 
+
 /*BREAKPOINTS:
 mobile: <= 480px
 tablet: > 480px and < = 960px
 desktop: > 960px*/
 
+
+/*IF MOBILE*/
 @media (max-width: 480px) {
   .usp-column{
     width: 100%;
   }
+  section#features-section .feature-image {
+    width: 100%;
+  }
+  section#features-section .feature-text {
+    width: 100%;
+  }
 }
 
+/*IF TABLET OR DESKTOP*/
+@media (min-width: 481px) {
+  /*switching the order for image/text for even feature blocks*/
+  section#features-section .feature-block:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+/*IF DESKTOP*/
 @media (min-width: 961px) {
   .usp-column {
     width: 33%;
