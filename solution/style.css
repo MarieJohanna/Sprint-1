@@ -22,7 +22,7 @@ body {
 h1, h2, h3, h4, .dropdown{
     font-family: Lora, serif;
     color: black
-    
+
 }
 
 
@@ -36,8 +36,9 @@ header {
   width: 100%;
   justify-content: space-between;
   position: fixed;
-  background-color: white;
+  background-color: #ac874b;
   font-size: 20px;
+  color: white;
 }
 
 .logo {
@@ -83,17 +84,18 @@ nav ul li {
 
 
 nav ul li a {
-  color: black;
   display:block;
   padding:0px 40px;
   text-decoration:none;
   float: left;
   height: 60px;
   line-height: 60px;
+  color: white;
 }
 
 nav ul li:hover {
-  background: white;
+  background-color: #ac874b;
+  opacity: 0.8;
   color: black;
 }
 
@@ -107,7 +109,7 @@ nav ul li:hover > ul {
 }
 
 nav ul ul {
-  background: white;
+  background-color: #ac874b;
   color: black;
   padding:0;
   text-align: center;
