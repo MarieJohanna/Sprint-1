@@ -219,28 +219,20 @@ section#features-section {
 }
 
 section#features-section .feature-block {
-  padding: 0 20px;
-
-}
-
-section#features-section .feature-content-container {
-  float: left;
-  padding: 20px;
-}
-
-section#features-section .feature-image-container {
-  width: 50%;
-
-}
-
-section#features-section .feature-image-container img {
   width: 100%;
-  display: block;
-  /*border-radius: 8px;*/
+  display: flex;
 }
 
-section#features-section .feature-text-container {
-    width: 50%;
+section#features-section .feature-image {
+  width: 50%;
+}
+
+section#features-section .feature-image img {
+  width: 100%;
+}
+
+section#features-section .feature-text {
+  width: 50%;
 }
 
 .footer-container {
