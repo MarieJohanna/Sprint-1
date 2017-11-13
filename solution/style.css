@@ -130,15 +130,6 @@ nav ul ul {
   /*background-position: right;
   background-repeat: no-repeat;*/
   background-size: cover;
-
-
-}
-
-.hero-text {
-  text-align: right;
-  position: absolute;
-  top: 15%;
-  right: 15%;
 }
 
 
@@ -198,6 +189,18 @@ section#features-section .feature-image img {
   width: 100%;
 }
 
+#feature-1 {
+  background: #772525;
+}
+
+#feature-2 {
+background: #cfb59b;
+}
+
+#feature-3 {
+background: #276753
+}
+
 .footer-container {
   width: 100%;
   height: auto;
@@ -206,15 +209,17 @@ section#features-section .feature-image img {
 }
 
 .footer {
-  background-color: navy;
+  background-color: #ac874b;
   width: 33.3%;
   float: left;
   padding: 0;
   border: 2px solid white;
   color: white;
-  text-transform: uppercase;
 }
 
+.footer h4 {
+  color: white;
+}
 .list {
   column-count: 2;
   padding: 10px;
@@ -238,7 +243,7 @@ section#features-section .feature-image img {
 
 .copyright {
   width: 100%;
-  background-color: navy;
+  background-color: #ac874b;
   padding: 10px;
 }
 
