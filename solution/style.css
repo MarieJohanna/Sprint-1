@@ -266,7 +266,6 @@ desktop: > 960px*/
   section#features-section .feature-image {
     width: 100%;
   }
-
   section#features-section .feature-text {
     width: 100%;
   }
@@ -274,7 +273,8 @@ desktop: > 960px*/
 
 /*IF TABLET OR DESKTOP*/
 @media (min-width: 481px) {
-  section#features-section .feature-block:nth-child(2) {
+  /*switching the order for image/text for even feature blocks*/
+  section#features-section .feature-block:nth-child(even) {
     flex-direction: row-reverse;
   }
 }
