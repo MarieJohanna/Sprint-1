@@ -204,6 +204,11 @@ section#features-section .feature-text {
   padding: 1% 3% 3% 3%;
 }
 
+section#features-section .feature-image {
+  width: 45%;
+  height: 500px;
+}
+
 section#features-section .feature-btn-wrap {
   margin: 40px 0 20px 0;
 }
@@ -251,12 +256,9 @@ div.feature-block#feature-1 .feature-text {
 }
 
 div.feature-block#feature-1 .feature-image {
-  width: 45%;
-  height: 500px;
   background-image: url(http://www.cameralink.com/uploads/picture/file/78521/felixodell-lifestyle-f21f9264_w2880.jpg);
   background-size: 170% auto;
   background-position: -240px -80px;
-  margin: 10px 0;
 }
 
 /*FEATURE 2 SPECIFIC*/
@@ -279,12 +281,10 @@ div.feature-block#feature-2 .feature-text p {
 }
 
 div.feature-block#feature-2 .feature-image {
-  width: 45%;
-  height: 500px;
-  background-image: url(http://www.cameralink.com/uploads/picture/file/78521/felixodell-lifestyle-f21f9264_w2880.jpg);
-  background-size: 170% auto;
-  background-position: -240px -80px;
-  margin: 10px 0;
+  background-image: url(https://cdn.pixabay.com/photo/2016/10/14/18/21/tee-1740871_960_720.jpg);
+  background-size: auto 100%;
+  background-position: -275px 0;
+  background-repeat: no-repeat;
 }
 
 /*FEATURE 3 SPECIFIC*/
