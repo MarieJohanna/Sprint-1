@@ -556,12 +556,10 @@ desktop: > 960px*/
 /*IF MOBILE*/
 @media (max-width: 480px) {
   .hero-image {
-
     width: 100%;
     height: auto;
-    /*height: auto;*/
-    /*display: block;*/
   }
+
   .usp {
     margin-top: -35px;
     margin-bottom: 5%;
