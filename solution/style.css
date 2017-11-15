@@ -154,10 +154,11 @@ nav ul ul {
   padding-top: 10px;
 }
 
-main {
+/*NOT IN USE ANYMORE*/
+/*main {
   max-width: 1025px;
   margin: auto;
-}
+}*/
 
 section#features-section {
   width: 100%;
@@ -165,35 +166,47 @@ section#features-section {
 
 section#features-section .feature-block {
   width: 100%;
+  padding: 50px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-}
-
-section#features-section .feature-image {
-  width: 50%;
+  /*background-size: cover;*/
 }
 
 section#features-section .feature-text {
-  width: 50%;
+  width: 35%;
+  background: #ffffff;
 }
 
- section#features-section .feature-image-container img {
- }
+div.feature-block#feature-1 .feature-image {
+  width: 45%;
+  height: 500px;
+  background-image: url(http://www.cameralink.com/uploads/picture/file/78521/felixodell-lifestyle-f21f9264_w2880.jpg);
+  background-size: 170% auto;
+  background-position: -240px -80px;
+  margin: 10px 0;
+}
 
-section#features-section .feature-image img {
+
+
+/*section#features-section .feature-image img {
   width: 100%;
-}
+  display: block;
+}*/
 
-#feature-1 {
+div.feature-block#feature-1 {
   background: #772525;
+  /*background-image: url(http://www.cameralink.com/uploads/picture/file/78521/felixodell-lifestyle-f21f9264_w2880.jpg);
+  background-size: 140% auto;
+  background-position: 0 -200px;*/
 }
 
-#feature-2 {
+div.feature-block#feature-2 {
 background: #cfb59b;
 }
 
-#feature-3 {
+div.feature-block#feature-3 {
 background: #276753
 }
 
