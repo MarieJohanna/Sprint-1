@@ -213,39 +213,36 @@ background: #276753
 }
 
 .footer-outer {
+  width: 100%;
   text-align: center;
   background-color: #ac874b;
+  border-top: 4px solid #c9ae83;
 }
 
 .footer-container {
-  width: 100%;
-  height: auto;
+  width: 80%;
+  height: 200px;
   bottom: 0;
   text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer {
-  /*background-color: #ac874b;*/
-  width: 33.3%;
-  float: left;
-  padding: 0;
-  /*border: 2px solid white;*/
+  width: 20%;
   color: white;
+  text-align: left;
+  background-color: #ac874b;
 }
 
 .footer h3 {
   color: white;
+  font-size: 150%;
 }
 
 .list {
-  padding: 0 10px 10px 10px;
   height: 100px;
-}
-
-.footer-logo {
-  font-family: Lobster Two;
-  font-size: 300%;
-  color: white;
 }
 
 .list ul {
@@ -266,26 +263,33 @@ background: #276753
 .social {
   display: flex;
   flex-flow: wrap;
-  justify-content: space-around;
-  align-content: center;
-  margin-bottom: 5px;
-  padding: 0 100px;
+  justify-content: flex-start;
+  margin-bottom: 10px;
 }
 
 .social i {
   font-size: 200%;
 }
 
-.copyright {
-  width: 100%;
-  /*background-color: #ac874b;*/
-  padding: 0;
-  margin: 0;
+.social a, .copyright i {
+  padding-right: 10px;
 }
 
-.copyright p {
-  text-align: center;
+.sign-up input, .sign-up button {
+  margin-top: 10px;
+}
+
+.copyright {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 25px;
   color: white;
+  font-family: Cabin;
+}
+
+.copyright span {
+  text-align: center;
   padding: 0;
   margin: 0;
 }
@@ -318,7 +322,9 @@ desktop: > 960px*/
   .usp {
     margin-top: -35px;
   }
-
+  .footer-container {
+    flex-flow: column nowrap;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 960px) {
