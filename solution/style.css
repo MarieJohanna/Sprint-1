@@ -201,6 +201,11 @@ background: #cfb59b;
 background: #276753
 }
 
+.footer-outer {
+  text-align: center;
+  background-color: #ac874b;
+}
+
 .footer-container {
   width: 100%;
   height: auto;
@@ -209,20 +214,26 @@ background: #276753
 }
 
 .footer {
-  background-color: #ac874b;
+  /*background-color: #ac874b;*/
   width: 33.3%;
   float: left;
   padding: 0;
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   color: white;
 }
 
-.footer h4 {
+.footer h3 {
   color: white;
 }
 .list {
-  column-count: 2;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
+  height: 100px;
+}
+
+.footer-logo {
+  font-family: Lobster Two;
+  font-size: 300%;
+  color: white;
 }
 
 .list ul {
@@ -234,22 +245,37 @@ background: #276753
 
 .list li {
   display: list-item;
-  padding: 0;
 }
 
 .list a {
   color: white;
 }
 
+.social {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-content: center;
+  margin-bottom: 5px;
+  padding: 0 100px;
+}
+
+.social i {
+  font-size: 200%;
+}
+
 .copyright {
   width: 100%;
-  background-color: #ac874b;
-  padding: 10px;
+  /*background-color: #ac874b;*/
+  padding: 0;
+  margin: 0;
 }
 
 .copyright p {
   text-align: center;
   color: white;
+  padding: 0;
+  margin: 0;
 }
 
 .list li a:link,
