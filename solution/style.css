@@ -22,7 +22,6 @@ body {
 h1, h2, h3, h4, .dropdown{
     font-family: Lora, serif;
     color: black
-
 }
 
 
@@ -47,12 +46,15 @@ header {
 }
 
 .logotype {
-  font-size: 30px;
+  font-size: 2vw;
   margin: 0;
   padding: 0;
   width: 20%;
-  font-family: Lobster Two;
+  font-family: 'Cabin', sans-serif;
   display: flex;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+
 }
 
 
