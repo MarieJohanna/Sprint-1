@@ -539,14 +539,22 @@ desktop: > 960px*/
 
     section#features-section .feature-text {
       width: 97%;
+      margin: 5% 0 10% 0;
+      padding: 2% 6% 7% 6%;
     }
 
     section#features-section .feature-image {
       width: 97%;
+      margin: 10% 0 5% 0;
+    }
+
+    div.feature-block#feature-2 .feature-image {
+      background-position: -88px 0;
     }
 
     div.feature-block#feature-3 .feature-text {
       width: 97%;
+      margin: 10% 0 10% 0;
     }
 
   .footer-container {
