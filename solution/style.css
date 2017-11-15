@@ -468,7 +468,6 @@ desktop: > 960px*/
     height: auto;
   }
 
-
   .usp {
     margin-top: -70px;
     margin-bottom: 5%;
@@ -540,12 +539,11 @@ desktop: > 960px*/
     width: 80%;
 }
 
-<<<<<<< HEAD
 /*IF DESKTOP*/
 @media (min-width: 961px) {
 
   .hero {
-=======
+
 /*IF SCREEN IS LESS THAN 775px*/
 @media (max-width: 775px) {
   div.feature-block#feature-1 .feature-image {
@@ -558,7 +556,7 @@ desktop: > 960px*/
 /*IF MOBILE*/
 @media (max-width: 480px) {
   .hero-image {
->>>>>>> 94057e083f98aaaa5f5069c568de5bd5d565b675
+
     width: 100%;
     height: auto;
     /*height: auto;*/
