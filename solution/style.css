@@ -162,56 +162,52 @@ nav p {
 .nav li a:visited {
 }
 
-.hero {
-
+.usp-hero{
+  /*position: relative;*/
 }
 
 .hero-image {
-  /*background-image: url(https://static.pexels.com/photos/126407/pexels-photo-126407.jpeg);*/
   width: 100%;
-  /*background-position: right;
-  background-repeat: no-repeat;*/
-  background-size: cover;
-
-
+  height: auto;
+  left: 0;
+  top: 0;
 }
 
-.hero-text {
-  text-align: right;
-  position: absolute;
-  top: 15%;
-  right: 15%;
-}
-
-
-main {
-  max-width: 1025px;
-  margin: auto;
-}
-
-
-.material-icons {
-  padding-top: 10px;
-}
-
-#usp {
-  padding: 10px;
-  positioning: absolute;
+.usp {
+  margin-top: -70px;
+  /*position: absolute;
+  bottom: 8%;
+  left: 10%;
+  right: 10%;
+  z-index: 100;*/
 }
 
 .usp-column {
-  width: 33%;
-  float: left;
-  padding: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  /*position: absolute;*/
 }
 
 .usp-card {
+  height: 160px;
+  width: 260px;
   background: #6ea6df;
   opacity: 0.6;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 2px 2px 10px grey;
+  margin: 20px;
+  text-align: center;
+  flex: auto;
+}
+
+.material-icons {
+  padding-top: 10px;
+}
+
+main {
+  max-width: 1025px;
+  margin: auto;
 }
 
 section#features-section {
@@ -306,12 +302,18 @@ desktop: > 960px*/
 
 @media (max-width: 480px) {
   .usp-column{
-    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 960px) {
+  .usp-column{
+    flex-wrap: nowrap;
   }
 }
 
 @media (min-width: 961px) {
   .usp-column {
-    width: 33%;
+      flex-wrap: nowrap;
   }
 }
