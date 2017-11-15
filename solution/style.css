@@ -74,7 +74,6 @@ nav ul {
   padding:0 20px;
   margin: 0;
   height: 60px;
-
 }
 
 
@@ -120,34 +119,22 @@ nav ul ul {
   left: 0px;
 }
 
-/*.usp-hero{
-  position: relative;
-}*/
-
 .hero-image {
   width: 100%;
   background-size: cover;
 }
 
-
-main {
-  max-width: 1025px;
-  margin: auto;
-}
-
-
 .material-icons {
   padding-top: 10px;
 }
 
-#usp {
-  padding: 10px;
+.usp {
+  padding-top: -70px;
 }
 
 .usp-column {
   display: flex;
   justify-content: center;
-  /*position: absolute;*/
 }
 
 .usp-card {
@@ -191,7 +178,6 @@ section#features-section .feature-text {
   width: 50%;
 }
 
-
  section#features-section .feature-image-container img {
  }
 
@@ -230,6 +216,7 @@ background: #276753
 .footer h4 {
   color: white;
 }
+
 .list {
   column-count: 2;
   padding: 10px;
