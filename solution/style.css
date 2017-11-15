@@ -168,7 +168,7 @@ nav ul ul {
   margin: auto;
 }*/
 
-/*FEATURE SECTION*/
+/*START OF FEATURE SECTION*/
 
 section#features-section {
   width: 100%;
@@ -231,14 +231,15 @@ div.feature-block#feature-2 {
 }
 
 div.feature-block#feature-2 div {
-  box-shadow: -4px 4px 0 rgba(172, 135, 75, 0.50);
+  box-shadow: 4px 4px 0 #d4d4d4;
 }
 
 div.feature-block#feature-2 .feature-text  {
     background: #ac874b;
 }
 
-div.feature-block#feature-2 .feature-text h2, p {
+div.feature-block#feature-2 .feature-text h2,
+div.feature-block#feature-2 .feature-text p {
     color: #ffffff;
 }
 
@@ -254,8 +255,19 @@ div.feature-block#feature-2 .feature-image {
 /*FEATURE 3 SPECIFIC*/
 
 div.feature-block#feature-3 {
-background: #276753
+  background-image: url(http://sylvie.se/wp-content/uploads/2017/08/mateus-7.jpg);
+  background-size: cover;
 }
+
+div.feature-block#feature-3 .feature-text {
+    background: #fdfdfd;
+}
+
+/*div.feature-block#feature-3 {
+background: #276753
+}*/
+
+/*END OF FEATURE SECTION*/
 
 .footer-outer {
   width: 100%;
