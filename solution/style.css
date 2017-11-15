@@ -22,7 +22,6 @@ body {
 h1, h2, h3, h4, .dropdown{
     font-family: Lora, serif;
     color: black
-
 }
 
 
@@ -47,12 +46,15 @@ header {
 }
 
 .logotype {
-  font-size: 30px;
+  font-size: 2vw;
   margin: 0;
   padding: 0;
   width: 20%;
-  font-family: Lobster Two;
+  font-family: 'Cabin', sans-serif;
   display: flex;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+
 }
 
 
@@ -74,7 +76,6 @@ nav ul {
   padding:0 20px;
   margin: 0;
   height: 60px;
-
 }
 
 
@@ -94,14 +95,13 @@ nav ul li a {
 }
 
 nav ul li:hover {
-  background-color: #ac874b;
-  opacity: 0.8;
+  /*background-color: #ac874b;*/
   color: black;
 }
 
 
 nav ul li:hover > a{
-    color: Navy;
+    color: black;
 }
 
 nav ul li:hover > ul {
@@ -109,7 +109,7 @@ nav ul li:hover > ul {
 }
 
 nav ul ul {
-  background-color: #ac874b;
+  background-color: #c9ae83;
   color: black;
   padding:0;
   text-align: center;
@@ -120,47 +120,47 @@ nav ul ul {
   left: 0px;
 }
 
-.hero {
-
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 .hero-image {
-  /*background-image: url(https://static.pexels.com/photos/126407/pexels-photo-126407.jpeg);*/
   width: 100%;
-  /*background-position: right;
-  background-repeat: no-repeat;*/
   background-size: cover;
 }
-
-
-main {
-  max-width: 1025px;
-  margin: auto;
-}
-
 
 .material-icons {
   padding-top: 10px;
 }
 
-#usp {
-  padding: 10px;
-}
-
 .usp-column {
-  width: 33%;
-  float: left;
-  padding: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .usp-card {
+  height: 160px;
+  width: 260px;
   background: #6ea6df;
   opacity: 1;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 2px 2px 10px grey;
+  margin: 20px;
+  text-align: center;
+  flex: auto;
 }
+
+.material-icons {
+  padding-top: 10px;
+}
+
+/*NOT IN USE ANYMORE*/
+/*main {
+  max-width: 1025px;
+  margin: auto;
+}*/
 
 section#features-section {
   width: 100%;
@@ -168,36 +168,47 @@ section#features-section {
 
 section#features-section .feature-block {
   width: 100%;
+  padding: 50px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-}
-
-section#features-section .feature-image {
-  width: 50%;
+  /*background-size: cover;*/
 }
 
 section#features-section .feature-text {
-  width: 50%;
+  width: 35%;
+  background: #ffffff;
+}
+
+div.feature-block#feature-1 .feature-image {
+  width: 45%;
+  height: 500px;
+  background-image: url(http://www.cameralink.com/uploads/picture/file/78521/felixodell-lifestyle-f21f9264_w2880.jpg);
+  background-size: 170% auto;
+  background-position: -240px -80px;
+  margin: 10px 0;
 }
 
 
- section#features-section .feature-image-container img {
- }
 
-section#features-section .feature-image img {
+/*section#features-section .feature-image img {
   width: 100%;
-}
+  display: block;
+}*/
 
-#feature-1 {
+div.feature-block#feature-1 {
   background: #772525;
+  /*background-image: url(http://www.cameralink.com/uploads/picture/file/78521/felixodell-lifestyle-f21f9264_w2880.jpg);
+  background-size: 140% auto;
+  background-position: 0 -200px;*/
 }
 
-#feature-2 {
+div.feature-block#feature-2 {
 background: #cfb59b;
 }
 
-#feature-3 {
+div.feature-block#feature-3 {
 background: #276753
 }
 
@@ -225,6 +236,7 @@ background: #276753
 .footer h3 {
   color: white;
 }
+
 .list {
   padding: 0 10px 10px 10px;
   height: 100px;
@@ -295,8 +307,35 @@ desktop: > 960px*/
 /*IF MOBILE*/
 @media (max-width: 480px) {
   .usp-column{
+    flex-wrap: wrap;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .usp {
+    margin-top: -35px;
+  }
+
+}
+
+@media (min-width: 480px) and (max-width: 960px) {
+  .usp-column{
+    flex-wrap: nowrap;
     width: 100%;
   }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .usp {
+    margin-top: -45px;
+  }
+
   section#features-section .feature-image {
     width: 100%;
   }
@@ -316,6 +355,17 @@ desktop: > 960px*/
 /*IF DESKTOP*/
 @media (min-width: 961px) {
   .usp-column {
-    width: 33%;
+      flex-wrap: nowrap;
+      width: 100%;
   }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .usp {
+    margin-top: -70px;
+  }
+
 }
