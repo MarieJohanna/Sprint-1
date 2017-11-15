@@ -128,10 +128,6 @@ nav ul ul {
   padding-top: 10px;
 }
 
-.usp {
-  margin-top: -70px;
-}
-
 .usp-column {
   display: flex;
   justify-content: center;
@@ -268,12 +264,33 @@ desktop: > 960px*/
   .usp-column{
     flex-wrap: wrap;
   }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .usp {
+    margin-top: -35px;
+  }
+
 }
 
 @media (min-width: 480px) and (max-width: 960px) {
   .usp-column{
     flex-wrap: nowrap;
+    width: 100%;
   }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .usp {
+    margin-top: -45px;
+  }
+
   section#features-section .feature-image {
     width: 100%;
   }
@@ -294,5 +311,16 @@ desktop: > 960px*/
 @media (min-width: 961px) {
   .usp-column {
       flex-wrap: nowrap;
+      width: 100%;
   }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .usp {
+    margin-top: -70px;
+  }
+
 }
