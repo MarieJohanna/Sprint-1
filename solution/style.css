@@ -95,14 +95,13 @@ nav ul li a {
 }
 
 nav ul li:hover {
-  background-color: #ac874b;
-  opacity: 0.8;
+  /*background-color: #ac874b;*/
   color: black;
 }
 
 
 nav ul li:hover > a{
-    color: Navy;
+    color: black;
 }
 
 nav ul li:hover > ul {
@@ -110,7 +109,7 @@ nav ul li:hover > ul {
 }
 
 nav ul ul {
-  background-color: #ac874b;
+  background-color: #c9ae83;
   color: black;
   padding:0;
   text-align: center;
@@ -119,6 +118,11 @@ nav ul ul {
   position: absolute;
   top: 60px;
   left: 0px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 .hero-image {
