@@ -22,7 +22,6 @@ body {
 h1, h2, h3, h4, .dropdown{
     font-family: Lora, serif;
     color: black
-
 }
 
 
@@ -47,12 +46,15 @@ header {
 }
 
 .logotype {
-  font-size: 30px;
+  font-size: 2vw;
   margin: 0;
   padding: 0;
   width: 20%;
-  font-family: Lobster Two;
+  font-family: 'Cabin', sans-serif;
   display: flex;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+
 }
 
 
@@ -126,10 +128,6 @@ nav ul ul {
 
 .material-icons {
   padding-top: 10px;
-}
-
-.usp {
-  padding-top: -70px;
 }
 
 .usp-column {
@@ -281,12 +279,33 @@ desktop: > 960px*/
   .usp-column{
     flex-wrap: wrap;
   }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .usp {
+    margin-top: -35px;
+  }
+
 }
 
 @media (min-width: 480px) and (max-width: 960px) {
   .usp-column{
     flex-wrap: nowrap;
+    width: 100%;
   }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .usp {
+    margin-top: -45px;
+  }
+
   section#features-section .feature-image {
     width: 100%;
   }
@@ -307,5 +326,16 @@ desktop: > 960px*/
 @media (min-width: 961px) {
   .usp-column {
       flex-wrap: nowrap;
+      width: 100%;
   }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .usp {
+    margin-top: -70px;
+  }
+
 }
