@@ -28,7 +28,7 @@
 
 
 	           <ul class="dropdown">
-               <li><a href="#">Products&darr;</a>
+               <li><a href="#">Products<span class="arrow">&darr;</span></a>
                  <ul>
                    <li><a href="#feature-1">Coffee</a></li>
                    <li><a href="#feature-2">Tea</a></li>
@@ -100,12 +100,27 @@
       <section id="features-section">
 
         <div class="feature-block" id="feature-1">
+          <!-- NOTE: ORDER OF TEXT AND IMAGE IS SET IN CSS -->
           <div class="feature-text">
-            <h2>TEST</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
             <p><a href="#" class="feature-btn">Call to action</a></p>
           </div>
-          <div class="feature-image" />
+          <div class="feature-image">
+            <!-- NOTE: IMAGE IS SET IN CSS -->
+          </div>
+        </div>
+
+        <div class="feature-block" id="feature-2">
+          <!-- NOTE: ORDER OF TEXT AND IMAGE IS SET IN CSS -->
+          <div class="feature-text">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <p><a href="#" class="feature-btn">Call to action</a></p>
+          </div>
+          <div class="feature-image">
+            <!-- NOTE: IMAGE IS SET IN CSS -->
+          </div>
         </div>
 
         <!-- <div class="feature-block" id="feature-1">
@@ -149,19 +164,19 @@
 
     <!-- start of footer -->
     <footer>
-      <div class="footer-outer">
-        <span class="footer-logo">Happy Coffee</span>
-      <section class="footer-container">
+      <section class="footer-outer">
+        <section class="footer-container">
         <div class="footer">
           <h3>
             <span>Customer Service</span>
           </h3>
           <div class="list">
             <ul>
-              <li><a href="">Contact <span class="logo-short">HC<span></a></li>
+              <li><a href="">Contact</a></li>
               <li><a href="">Online sales</a></li>
               <li><a href="">Delivery</a></li>
               <li><a href="">Payments</a></li>
+              <li><a href="">Purchase Policy</a></li>
             </ul>
           </div>
         </div>
@@ -189,14 +204,16 @@
               <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
               <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
-            <div class="sign-up">Sign up for Newsletter</br><input type="email"><button>Send</button></div>
+            <div class="sign-up">Sign up for Newsletter</br>
+              <input type="email"><button>Send</button>
+            </div>
           </div>
         </div>
-        <div class="copyright">
-          <p>C Happy Coffee AB</p>
-        </div>
       </section>
+     <div class="copyright">
+       <i class="fa fa-copyright" aria-hidden="true"></i><span class="footer-logo">HAPPY COFFEE AB</span>
     </div>
+  </section>
     </footer>
 
     <!-- end of footer -->

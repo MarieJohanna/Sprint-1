@@ -5,6 +5,7 @@
 html {
   font-family: Raleway, sans-serif;
   font-size: 15px;
+  background: #f7f7f7;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 
 h1, h2, h3, h4, .dropdown{
     font-family: Lora, serif;
-    color: black
+    color: black;
 }
 
 
@@ -120,6 +121,11 @@ nav ul ul {
   left: 0px;
 }
 
+.arrow {
+  margin: 5px;
+  font-size: 14px;
+}
+
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -161,19 +167,30 @@ nav ul ul {
   padding-top: 10px;
 }*/
 
-/*NOT IN USE ANYMORE*/
+/*NOT IN USE ANYMORE -- TO BE DELETED?*/
 /*main {
   max-width: 1025px;
   margin: auto;
 }*/
 
+/*FEATURE SECTION*/
+
 section#features-section {
   width: 100%;
 }
 
+section#features-section h2 {
+  font-size: 2.2em;
+}
+
+section#features-section p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
 section#features-section .feature-block {
   width: 100%;
-  padding: 50px;
+  padding: 6% 8%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -183,7 +200,24 @@ section#features-section .feature-block {
 
 section#features-section .feature-text {
   width: 35%;
-  background: #ffffff;
+  padding: 1% 3% 3% 3%;
+}
+
+/*FEATURE-1 SPECIFIC*/
+
+div.feature-block#feature-1 {
+  background: #772525;
+  /*background-image: url(http://www.cameralink.com/uploads/picture/file/78521/felixodell-lifestyle-f21f9264_w2880.jpg);
+  background-size: 140% auto;
+  background-position: 0 -200px;*/
+}
+
+div.feature-block#feature-1 div {
+  box-shadow: 4px 4px 0 #652828;
+}
+
+div.feature-block#feature-1 .feature-text {
+    background: #fdfdfd;
 }
 
 div.feature-block#feature-1 .feature-image {
@@ -195,62 +229,70 @@ div.feature-block#feature-1 .feature-image {
   margin: 10px 0;
 }
 
-
-
-/*section#features-section .feature-image img {
-  width: 100%;
-  display: block;
-}*/
-
-div.feature-block#feature-1 {
-  background: #772525;
-  /*background-image: url(http://www.cameralink.com/uploads/picture/file/78521/felixodell-lifestyle-f21f9264_w2880.jpg);
-  background-size: 140% auto;
-  background-position: 0 -200px;*/
-}
+/*FEATURE 2 SPECIFIC*/
 
 div.feature-block#feature-2 {
-background: #cfb59b;
+  background: #fdfdfd;
 }
+
+div.feature-block#feature-2 div {
+  box-shadow: -4px 4px 0 rgba(172, 135, 75, 0.50);
+}
+
+div.feature-block#feature-2 .feature-text  {
+    background: #ac874b;
+}
+
+div.feature-block#feature-2 .feature-text h2, p {
+    color: #ffffff;
+}
+
+div.feature-block#feature-2 .feature-image {
+  width: 45%;
+  height: 500px;
+  background-image: url(http://www.cameralink.com/uploads/picture/file/78521/felixodell-lifestyle-f21f9264_w2880.jpg);
+  background-size: 170% auto;
+  background-position: -240px -80px;
+  margin: 10px 0;
+}
+
+/*FEATURE 3 SPECIFIC*/
 
 div.feature-block#feature-3 {
 background: #276753
 }
 
 .footer-outer {
+  width: 100%;
   text-align: center;
   background-color: #ac874b;
+  border-top: 4px solid #c9ae83;
 }
 
 .footer-container {
-  width: 100%;
-  height: auto;
+  width: 80%;
+  height: 200px;
   bottom: 0;
   text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer {
-  /*background-color: #ac874b;*/
-  width: 33.3%;
-  float: left;
-  padding: 0;
-  /*border: 2px solid white;*/
+  width: 20%;
   color: white;
+  text-align: left;
+  background-color: #ac874b;
 }
 
 .footer h3 {
   color: white;
+  font-size: 150%;
 }
 
 .list {
-  padding: 0 10px 10px 10px;
   height: 100px;
-}
-
-.footer-logo {
-  font-family: Lobster Two;
-  font-size: 300%;
-  color: white;
 }
 
 .list ul {
@@ -271,26 +313,33 @@ background: #276753
 .social {
   display: flex;
   flex-flow: wrap;
-  justify-content: space-around;
-  align-content: center;
-  margin-bottom: 5px;
-  padding: 0 100px;
+  justify-content: flex-start;
+  margin-bottom: 10px;
 }
 
 .social i {
   font-size: 200%;
 }
 
-.copyright {
-  width: 100%;
-  /*background-color: #ac874b;*/
-  padding: 0;
-  margin: 0;
+.social a, .copyright i {
+  padding-right: 10px;
 }
 
-.copyright p {
-  text-align: center;
+.sign-up input, .sign-up button {
+  margin-top: 10px;
+}
+
+.copyright {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 25px;
   color: white;
+  font-family: Cabin;
+}
+
+.copyright span {
+  text-align: center;
   padding: 0;
   margin: 0;
 }
@@ -331,6 +380,13 @@ desktop: > 960px*/
   .hero-image {
     width: 100%;
     height: auto;
+  }
+
+  .usp {
+    margin-top: -35px;
+  }
+  .footer-container {
+    flex-flow: column nowrap;
   }
 
   .usp-card {
