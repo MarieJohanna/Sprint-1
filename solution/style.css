@@ -416,10 +416,12 @@ desktop: > 960px*/
 
 /*IF MOBILE*/
 @media (max-width: 480px) {
-  .hero-image {
+
+  .hero {
     width: 100%;
     height: auto;
   }
+
   .usp {
     margin-top: -35px;
     margin-bottom: 5%;
@@ -449,6 +451,12 @@ desktop: > 960px*/
 }
 
 @media (min-width: 480px) and (max-width: 960px) {
+
+  .hero {
+    width: 100%;
+    height: auto;
+  }
+
   .usp {
     margin-top: -45px;
     margin-bottom: 5%;
@@ -498,9 +506,12 @@ desktop: > 960px*/
 
 /*IF DESKTOP*/
 @media (min-width: 961px) {
-  .hero-image {
+
+  .hero {
     width: 100%;
     height: auto;
+    /*height: auto;*/
+    /*display: block;*/
   }
 
   .usp {
