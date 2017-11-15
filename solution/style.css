@@ -196,7 +196,7 @@ section#features-section p {
 
 section#features-section .feature-block {
   width: 100%;
-  padding: 6% 8%;
+  padding: 0 8%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -206,6 +206,14 @@ section#features-section .feature-block {
 section#features-section .feature-text {
   width: 35%;
   padding: 1% 3% 3% 3%;
+  margin: 6% 0;
+}
+
+section#features-section .feature-image {
+  width: 45%;
+  height: 500px;
+  margin: 6% 0;
+  background-repeat: no-repeat;
 }
 
 section#features-section .feature-btn-wrap {
@@ -241,9 +249,6 @@ section#features-section .feature-btn-variant:hover {
 
 div.feature-block#feature-1 {
   background: #772525;
-  /*background-image: url(http://www.cameralink.com/uploads/picture/file/78521/felixodell-lifestyle-f21f9264_w2880.jpg);
-  background-size: 140% auto;
-  background-position: 0 -200px;*/
 }
 
 div.feature-block#feature-1 div {
@@ -255,12 +260,9 @@ div.feature-block#feature-1 .feature-text {
 }
 
 div.feature-block#feature-1 .feature-image {
-  width: 45%;
-  height: 500px;
   background-image: url(http://www.cameralink.com/uploads/picture/file/78521/felixodell-lifestyle-f21f9264_w2880.jpg);
   background-size: 170% auto;
   background-position: -240px -80px;
-  margin: 10px 0;
 }
 
 /*FEATURE 2 SPECIFIC*/
@@ -283,12 +285,9 @@ div.feature-block#feature-2 .feature-text p {
 }
 
 div.feature-block#feature-2 .feature-image {
-  width: 45%;
-  height: 500px;
-  background-image: url(http://www.cameralink.com/uploads/picture/file/78521/felixodell-lifestyle-f21f9264_w2880.jpg);
-  background-size: 170% auto;
-  background-position: -240px -80px;
-  margin: 10px 0;
+  background-image: url(https://cdn.pixabay.com/photo/2016/10/14/18/21/tee-1740871_960_720.jpg);
+  background-size: auto 100%;
+  background-position: -275px 0;
 }
 
 /*FEATURE 3 SPECIFIC*/
@@ -407,11 +406,23 @@ background: #276753
   text-decoration: none;
 }
 
-
 /*BREAKPOINTS:
 mobile: <= 480px
 tablet: > 480px and < = 960px
 desktop: > 960px*/
+
+/*[FEATURES] EVERYTHING LESS THAN 1220px*/
+@media (max-width: 1220px) {
+ section#features-section .feature-image {
+   height: 380px;
+ }
+ div.feature-block#feature-2 .feature-image {
+   background-position: -140px 0;
+ }
+}
+
+/*IF DESKTOP*/
+@media (min-width: 961px) {
 
 
 /*IF MOBILE*/
@@ -457,6 +468,144 @@ desktop: > 960px*/
     height: auto;
   }
 
+
+  .usp {
+    margin-top: -70px;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+
+  .usp-column {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .usp-card {
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 15%;
+  }
+
+  .card1 {
+    margin-left: 3%;
+  }
+
+  .card2 {
+    margin: 0% 7% 0% 7%;
+  }
+
+  .card3 {
+    margin-right: 3%;
+  }
+
+  /*switching the order for image/text for odd feature blocks*/
+  section#features-section .feature-block:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+}
+
+/*IF MOBILE OR TABLET*/
+@media (max-width: 960px) {
+  section#features-section .feature-text {
+    margin: 3% 0 6% 0;
+    width: 80%;
+  }
+  section#features-section .feature-image {
+    height: 300px;
+    width: 80%;
+    margin: 6% 0 3% 0;
+  }
+  div.feature-block#feature-3 .feature-text {
+    margin: 6% 0 6% 0;
+    width: 60%;
+  }
+  div.feature-block#feature-1 .feature-image {
+    background-size: cover;
+    background-position: 0 0;
+  }
+  div.feature-block#feature-2 .feature-image {
+    background-size: cover;
+    background-position: 0 0;
+  }
+}
+
+/*IF SCREEN IS LESS THAN 800px*/
+@media (max-width: 800px) {
+  div.feature-block#feature-1 .feature-image {
+    background-size: 100% auto;
+  }
+  div.feature-block#feature-3 .feature-text {
+    width: 80%;
+}
+
+<<<<<<< HEAD
+/*IF DESKTOP*/
+@media (min-width: 961px) {
+
+  .hero {
+=======
+/*IF SCREEN IS LESS THAN 775px*/
+@media (max-width: 775px) {
+  div.feature-block#feature-1 .feature-image {
+    background-size: auto 100%;
+  }
+  div.feature-block#feature-3 .feature-text {
+    width: 80%;
+}
+
+/*IF MOBILE*/
+@media (max-width: 480px) {
+  .hero-image {
+>>>>>>> 94057e083f98aaaa5f5069c568de5bd5d565b675
+    width: 100%;
+    height: auto;
+    /*height: auto;*/
+    /*display: block;*/
+  }
+  .usp {
+    margin-top: -35px;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+
+  .usp-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap:
+  }
+
+    .usp-card {
+      width: 100%;
+      margin-bottom: 5%;
+      padding: 12%;
+    }
+
+    .card1, .card2, .card3 {
+      margin: 0% 2% 2% 2%;
+    }
+
+    section#features-section .feature-text {
+      width: 97%;
+    }
+
+    section#features-section .feature-image {
+      width: 97%;
+    }
+
+    div.feature-block#feature-3 .feature-text {
+      width: 97%;
+    }
+
+  .footer-container {
+    flex-flow: column nowrap;
+  }
+
+}
+
+/*IF TABLET*/
+@media (min-width: 480px) and (max-width: 960px) {
   .usp {
     margin-top: -45px;
     margin-bottom: 5%;
@@ -488,60 +637,14 @@ desktop: > 960px*/
     margin-right: 3%;
   }
 
-  section#features-section .feature-image {
-    width: 100%;
-  }
-  section#features-section .feature-text {
-    width: 100%;
-  }
-}
-
-/*IF TABLET OR DESKTOP*/
-@media (min-width: 481px) {
-  /*switching the order for image/text for even feature blocks*/
-  section#features-section .feature-block:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-}
-
-/*IF DESKTOP*/
-@media (min-width: 961px) {
-
-  .hero {
-    width: 100%;
-    height: auto;
-    /*height: auto;*/
-    /*display: block;*/
+  div.feature-block#feature-1 .feature-image {
+    background-size: 100% auto;
+    background-position: 0 0;
   }
 
-  .usp {
-    margin-top: -70px;
-    margin-bottom: 5%;
-    width: 100%;
-  }
-
-  .usp-column {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-
-  .usp-card {
-    width: 100%;
-    margin-bottom: 5%;
-    padding: 15%;
-  }
-
-  .card1 {
-    margin-left: 3%;
-  }
-
-  .card2 {
-    margin: 0% 7% 0% 7%;
-  }
-
-  .card3 {
-    margin-right: 3%;
+  div.feature-block#feature-2 .feature-image {
+    background-size: auto;
+    background-position: right;
   }
 
 }
