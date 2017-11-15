@@ -388,6 +388,23 @@ background: #276753
   margin-top: 10px;
 }
 
+.sign-up input {
+  border-style: outset;
+  border: none;
+  background-color: #c9ae83;
+  padding: 7px 17px;
+}
+
+.sign-up button {
+  background-color: #c9ae83;
+  border: none;
+  color: white;
+  padding: 7px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+}
+
 .copyright {
   width: 100%;
   padding: 0;
@@ -617,10 +634,21 @@ desktop: > 960px*/
 
   .footer-container {
     flex-flow: column;
+    height: auto;
   }
 
   .footer {
     width: 100%;
+    text-align: center;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .copyright {
+    width: 100%;
+    margin-top: 50px;
   }
 
 }
