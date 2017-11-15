@@ -21,11 +21,18 @@ body {
     display: table;
 }
 
+
 h1, h2, h3, h4, .dropdown{
     /*font-family: Lora, serif;*/
     font-family: Raleway, sans-serif;
+
 }
 
+h3, .fa-arrow-down {
+    font-family: Lora, serif;
+    color: white;
+    font-weight: grey;
+}
 
 header {
   width: 100%;
@@ -146,9 +153,6 @@ nav ul ul {
   justify-content: space-between;
 }
 
-.card1, .card2, .card3 {
-
-}
 .usp-card {
   /*height: 160px;
   width: 260px;*/
@@ -156,12 +160,12 @@ nav ul ul {
   height: 170px;
   background: #965840;
   opacity: 1;
-  padding: 3%;
+  /*padding: 3%;*/
   border-radius: 5px;
   box-shadow: 2px 2px 10px grey;
   /*margin: 20px;*/
   text-align: center;
-  flex: auto;
+  /*flex: auto;*/
 }
 
 /*.material-icons {
@@ -412,9 +416,13 @@ desktop: > 960px*/
 
 /*IF MOBILE*/
 @media (max-width: 480px) {
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
   .usp {
     margin-top: -35px;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
     width: 100%;
   }
 
@@ -422,37 +430,28 @@ desktop: > 960px*/
     display: flex;
     flex-direction: column;
     flex-wrap: wrap:
-
   }
 
-  /*.usp-column{
-    flex-wrap: wrap;
-  }
+    .usp-card {
+      width: 100%;
+      margin-bottom: 5%;
+      padding: 12%;
+    }
 
-  .hero-image {
-    width: 100%;
-    height: auto;
-  }
+    .card1, .card2, .card3 {
+      margin: 0% 2% 2% 2%;
+    }
 
-  .usp {
-    margin-top: -35px;
-  }
   .footer-container {
     flex-flow: column nowrap;
   }
-
-  .usp-card {
-    /*height: 140px;*/
-    /*width: auto;
-    margin: 10px 30px 10px 30px;
-    }*/
 
 }
 
 @media (min-width: 480px) and (max-width: 960px) {
   .usp {
     margin-top: -45px;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
     width: 100%;
     height: auto;
   }
@@ -466,7 +465,7 @@ desktop: > 960px*/
   .usp-card {
     width: 100%;
     margin-bottom: 5%;
-    padding: 5%;
+    padding: 12%;
   }
 
   .card1 {
@@ -480,22 +479,6 @@ desktop: > 960px*/
   .card3 {
     margin-right: 3%;
   }
-    /*.usp-column{
-    flex-wrap: nowrap;
-    width: 100%;
-  }
-
-  .hero-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .usp-card {
-    width: auto;
-    margin-bottom: 25px;
-  }*/
-
-
 
   section#features-section .feature-image {
     width: 100%;
@@ -522,7 +505,7 @@ desktop: > 960px*/
 
   .usp {
     margin-top: -70px;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
     width: 100%;
   }
 
