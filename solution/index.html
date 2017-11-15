@@ -13,6 +13,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Cabin:500" rel="stylesheet">
 
+    <!-- <script src="picturefill.js"></script> -->
+
     <title></title>
   </head>
   <body>
@@ -45,8 +47,17 @@
     <!-- end of header -->
     <!-- start of hero image -->
       <div class="hero">
-        <img class="hero-image" src="https://www.grandamerica.com/wp-content/uploads/2017/05/GAH-AfternoonTea-Header-2017.jpg"
-        alt="Coffee that makes you happy">
+
+          <picture>
+            <source class="hero-image" srcset="./images/AfternoonTea-480px.jpg" media="(max-width: 480px)">
+            <source class="hero-image" srcset="./images/AfternoonTea-Orginal.jpg">
+            <img class="hero-image" src="./images/AfternoonTea-Orginal.jpg" alt="Coffee that makes you happy">
+          </picture>
+
+
+        <!-- OLD SOLUTION -->
+        <!-- <img class="hero-image" src="https://www.grandamerica.com/wp-content/uploads/2017/05/GAH-AfternoonTea-Header-2017.jpg"
+        alt="Coffee that makes you happy"> -->
       </div>
     <!-- end of hero image -->
     <!-- start of main content -->
@@ -58,7 +69,7 @@
         <div class="usp-column">
 
           <div class="card1">
-              <a href="https://www.izettle.com/se">
+              <a href="#feature-1">
                 <div class="usp-card">
                   <h3> Coffee will make you happy! </h3>
                   <i class="fa fa-arrow-down" aria-hidden="true"></i>
@@ -67,7 +78,7 @@
           </div>
 
           <div class="card2">
-            <a href="https://www.izettle.com/se">
+            <a href="#feature-2">
               <div class="usp-card">
                 <h3> Tea is luxury for yourself! </h3>
                 <i class="fa fa-arrow-down" aria-hidden="true"></i>
@@ -76,7 +87,7 @@
           </div>
 
           <div class="card3">
-            <a href="https://www.izettle.com/se">
+            <a href="#feature-3">
               <div class="usp-card">
                 <h3> Try our Christmas specials! </h3>
                 <i class="fa fa-arrow-down" aria-hidden="true"></i>
