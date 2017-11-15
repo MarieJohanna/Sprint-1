@@ -543,7 +543,7 @@ desktop: > 960px*/
 /*IF SCREEN IS LESS THAN 800px*/
 @media (max-width: 800px) {
   div.feature-block#feature-1 .feature-image {
-    background-size: 100% auto;
+    background-size: cover;
   }
   div.feature-block#feature-3 .feature-text {
     width: 80%;
@@ -551,9 +551,9 @@ desktop: > 960px*/
 
 /*IF SCREEN IS LESS THAN 775px*/
 @media (max-width: 775px) {
-  div.feature-block#feature-1 .feature-image {
+  /*div.feature-block#feature-1 .feature-image {
     background-size: auto 100%;
-  }
+  }*/
   div.feature-block#feature-3 .feature-text {
     width: 80%;
 }
