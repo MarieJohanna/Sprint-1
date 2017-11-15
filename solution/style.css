@@ -411,6 +411,51 @@ mobile: <= 480px
 tablet: > 480px and < = 960px
 desktop: > 960px*/
 
+/*IF TABLET*/
+@media (min-width: 481px) and (max-width: 960px) {
+  .usp {
+    margin-top: -45px;
+    margin-bottom: 5%;
+    width: 100%;
+    height: auto;
+  }
+
+  .usp-column {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .usp-card {
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 12%;
+  }
+
+  .card1 {
+    margin-left: 3%;
+  }
+
+  .card2 {
+    margin: 0% 5% 0% 5%;
+  }
+
+  .card3 {
+    margin-right: 3%;
+  }
+
+  div.feature-block#feature-1 .feature-image {
+    background-size: 100% auto;
+    background-position: 0 0;
+  }
+
+  div.feature-block#feature-2 .feature-image {
+    background-size: auto;
+    background-position: right;
+  }
+
+}
+
 /*[FEATURES] EVERYTHING LESS THAN 1220px*/
 @media (max-width: 1220px) {
  section#features-section .feature-image {
@@ -419,42 +464,6 @@ desktop: > 960px*/
  div.feature-block#feature-2 .feature-image {
    background-position: -140px 0;
  }
-}
-
-/*IF MOBILE*/
-@media (max-width: 480px) {
-
-  .hero {
-    width: 100%;
-    height: auto;
-  }
-
-  .usp {
-    margin-top: -35px;
-    margin-bottom: 5%;
-    width: 100%;
-  }
-
-  .usp-column {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap:
-  }
-
-    .usp-card {
-      width: 100%;
-      margin-bottom: 5%;
-      padding: 12%;
-    }
-
-    .card1, .card2, .card3 {
-      margin: 0% 2% 2% 2%;
-    }
-
-  .footer-container {
-    flex-flow: column nowrap;
-  }
-
 }
 
 /*IF DESKTOP*/
@@ -536,11 +545,6 @@ desktop: > 960px*/
     width: 80%;
 }
 
-/*IF DESKTOP*/
-@media (min-width: 961px) {
-
-  .hero {
-
 /*IF SCREEN IS LESS THAN 775px*/
 @media (max-width: 775px) {
   div.feature-block#feature-1 .feature-image {
@@ -552,6 +556,12 @@ desktop: > 960px*/
 
 /*IF MOBILE*/
 @media (max-width: 480px) {
+
+  .hero {
+    width: 100%;
+    height: auto;
+  }
+
   .hero-image {
 
     width: 100%;
@@ -559,6 +569,7 @@ desktop: > 960px*/
     /*height: auto;*/
     /*display: block;*/
   }
+
   .usp {
     margin-top: -35px;
     margin-bottom: 5%;
@@ -571,83 +582,38 @@ desktop: > 960px*/
     flex-wrap: wrap:
   }
 
-    .usp-card {
-      width: 100%;
-      margin-bottom: 5%;
-      padding: 12%;
-    }
-
-    .card1, .card2, .card3 {
-      margin: 0% 2% 2% 2%;
-    }
-
-    section#features-section .feature-text {
-      width: 97%;
-      margin: 5% 0 10% 0;
-      padding: 2% 6% 7% 6%;
-    }
-
-    section#features-section .feature-image {
-      width: 97%;
-      margin: 10% 0 5% 0;
-    }
-
-    div.feature-block#feature-2 .feature-image {
-      background-position: -88px 0;
-    }
-
-    div.feature-block#feature-3 .feature-text {
-      width: 97%;
-      margin: 10% 0 10% 0;
-    }
-
-  .footer-container {
-    flex-flow: column nowrap;
-  }
-
-}
-
-/*IF TABLET*/
-@media (min-width: 480px) and (max-width: 960px) {
-  .usp {
-    margin-top: -45px;
-    margin-bottom: 5%;
-    width: 100%;
-    height: auto;
-  }
-
-  .usp-column {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-
   .usp-card {
     width: 100%;
     margin-bottom: 5%;
     padding: 12%;
   }
 
-  .card1 {
-    margin-left: 3%;
+  .card1, .card2, .card3 {
+    margin: 0% 2% 2% 2%;
   }
 
-  .card2 {
-    margin: 0% 5% 0% 5%;
+  section#features-section .feature-text {
+    width: 97%;
+    margin: 5% 0 10% 0;
+    padding: 2% 6% 7% 6%;
   }
 
-  .card3 {
-    margin-right: 3%;
-  }
-
-  div.feature-block#feature-1 .feature-image {
-    background-size: 100% auto;
-    background-position: 0 0;
+  section#features-section .feature-image {
+    width: 97%;
+    margin: 10% 0 5% 0;
   }
 
   div.feature-block#feature-2 .feature-image {
-    background-size: auto;
-    background-position: right;
+    background-position: -88px 0;
+  }
+
+  div.feature-block#feature-3 .feature-text {
+    width: 97%;
+    margin: 10% 0 10% 0;
+  }
+
+  .footer-container {
+    flex-flow: column nowrap;
   }
 
 }
