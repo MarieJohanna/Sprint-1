@@ -613,8 +613,14 @@ desktop: > 960px*/
     margin: 10% 0 10% 0;
   }
 
+/*MARIE KOLLA HÄR!!*/
+
   .footer-container {
-    flex-flow: column nowrap;
+    flex-flow: column;
+  }
+
+  .footer {
+    width: 100%;
   }
 
 }
