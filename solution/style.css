@@ -120,6 +120,11 @@ nav ul ul {
   left: 0px;
 }
 
+.arrow {
+  margin: 5px;
+  font-size: 14px;
+}
+
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
