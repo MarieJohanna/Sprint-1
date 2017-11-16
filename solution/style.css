@@ -47,9 +47,8 @@ nav {
   margin: 0;
   color: white;
   display: flex;
-
-  text-transform: uppercase;
-  letter-spacing: 0.1vw;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .nav-container {
@@ -69,9 +68,11 @@ nav ul li {
   display: inline-block;
   float: left;
 }
+
 nav ul li:not(:first-child) {
   margin-left: 25px;
 }
+
 nav ul li a {
   display: inline-block;
   outline: none;
@@ -80,15 +81,10 @@ nav ul li a {
   text-decoration: none;
   letter-spacing: 0.04em;
 }
+
 nav ul li a:hover {
   color: black;
   text-decoration: none;
-}
-
-
-
-nav ul li:hover > a {
-  color: black;
 }
 
 .logo {
