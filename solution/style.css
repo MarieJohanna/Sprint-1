@@ -50,10 +50,7 @@ nav {
 
   text-transform: uppercase;
   letter-spacing: 0.1vw;
-<<<<<<< HEAD
-=======
 
->>>>>>> parent of e512676... header fixed
 }
 
 
@@ -107,7 +104,7 @@ nav ul li:hover > a {
   color: white;
   display: inline;
 
-<<<<<<< HEAD
+
 #nav:checked + .nav-open {
   transform: rotate(45deg);
 }
@@ -137,8 +134,7 @@ nav ul li:hover > a {
 #nav:checked ~ .nav-container ul li a {
   opacity: 1;
   transform: translateY(0);
-=======
->>>>>>> parent of e512676... header fixed
+
 }
 
 
