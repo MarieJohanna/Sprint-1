@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 15px;
   background: #c9ae83;
   color: rgba(0, 0, 0, 0.8);
@@ -24,9 +24,9 @@ body {
 }
 
 
-h1, h2, h3, h4, .dropdown{
+h1, h2, h3, h4, {
     /*font-family: Lora, serif;*/
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
 
 }
 
@@ -40,104 +40,98 @@ header {
   width: 100%;
 }
 
-.container-header {
-  display: flex;
-  flex-wrap: wrap;
+nav {
   width: 100%;
-  justify-content: space-between;
-  position: fixed;
-  background-color: #ac874b;
-  font-size: 20px;
-  color: white;
-}
-
-.logo {
-  justify-content: space-between;
-  margin: auto;
-}
-
-.logotype {
-  font-size: 2vw;
+  height: 70px;
+  background: #ac874b;
   margin: 0;
-  padding: 0;
-  width: 20%;
-  font-family: 'Cabin', sans-serif;
+  color: white;
   display: flex;
+
   text-transform: uppercase;
   letter-spacing: 0.1vw;
 
 }
 
-.dropdown {
-  width: 80%;
-}
 
-nav {
-  text-align:center;
-  width: 100%;
-  padding: 0;
+
+.nav-container {
+  display: inline-block;
   margin: 0;
-  height: 60px;
-  position:relative;
+  padding: 0;
+  height: auto;
 }
 
 nav ul {
-  list-style:none;
-  padding:0 20px;
+  float: right;
   margin: 0;
-  height: 60px;
+  padding: 0;
+
 }
-
-
 nav ul li {
   display: inline-block;
-}
-
-
-nav ul li a {
-  display:block;
-  padding:0px 40px;
-  text-decoration:none;
   float: left;
-  height: 60px;
-  line-height: 60px;
+}
+nav ul li:not(:first-child) {
+  margin-left: 25px;
+}
+nav ul li a {
+  display: inline-block;
+  outline: none;
   color: white;
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+nav ul li a:hover {
+  color: black;
+  text-decoration: none;
 }
 
-nav ul li:hover {
-  /*background-color: #ac874b;*/
+
+
+nav ul li:hover > a {
   color: black;
 }
 
+.logo {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cabin', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  color: white;
+  display: inline;
 
-nav ul li:hover > a{
-  color: black;
 }
 
-nav ul li:hover > ul {
-  display:block;
+#nav:checked + .nav-open {
+  transform: rotate(45deg);
 }
-
-nav ul ul {
-  background-color: #c9ae83;
-  color: black;
-  padding:0;
-  text-align: center;
-  display:none;
-  width: 100%;
-  position: absolute;
-  top: 60px;
-  left: 0px;
+#nav:checked + .nav-open i {
+  background: #fff;
+  transition: transform 0.2s ease;
 }
-
-.arrow {
-  margin: 5px;
-  font-size: 14px;
+#nav:checked + .nav-open i:nth-child(1) {
+  transform: translateY(6px) rotate(180deg);
 }
-
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+#nav:checked + .nav-open i:nth-child(2) {
+  opacity: 0;
+}
+#nav:checked + .nav-open i:nth-child(3) {
+  transform: translateY(-6px) rotate(90deg);
+}
+#nav:checked ~ .nav-container {
+  z-index: 9990;
+  opacity: 1;
+}
+#nav:checked ~ .nav-container ul li a {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hidden {
+  display: none;
 }
 
 .hero-image {
@@ -566,6 +560,84 @@ desktop: > 960px*/
   }*/
   div.feature-block#feature-3 .feature-text {
     width: 80%;
+}
+/*@media screen and (max-width: 760px) {*/
+/*NAVIGATION ON TABLET OR MOBILE*/
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #ac874b;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+  .nav-container ul {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  .nav-container ul li {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .nav-container ul li:nth-child(1) a {
+    transition-delay: 0.2s;
+  }
+  .nav-container ul li:nth-child(2) a {
+    transition-delay: 0.3s;
+  }
+  .nav-container ul li:nth-child(3) a {
+    transition-delay: 0.4s;
+  }
+  .nav-container ul li:nth-child(4) a {
+    transition-delay: 0.5s;
+  }
+  .nav-container ul li:not(:first-child) {
+    margin-left: 0;
+  }
+  .nav-container ul li a {
+    padding: 10px 25px;
+    opacity: 0;
+    color: #fff;
+    font-size: 24px;
+    transform: translateY(-20px);
+    transition: all 0.2s ease;
+  }
+  .nav-open {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 9999;
+    border-radius: 50%;
+  }
+  .nav-open i {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: white;
+    margin-left: 14px;
+  }
+  .nav-open i:nth-child(1) {
+    margin-top: 16px;
+  }
+  .nav-open i:nth-child(2) {
+    margin-top: 4px;
+    opacity: 1;
+  }
+  .nav-open i:nth-child(3) {
+    margin-top: 4px;
+  }
 }
 
 /*IF MOBILE*/
