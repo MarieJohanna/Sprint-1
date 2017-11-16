@@ -47,9 +47,9 @@ nav {
   margin: 0;
   color: white;
   display: flex;
+  justify-content: space-between;
+  padding: 20px;
 
-  text-transform: uppercase;
-  letter-spacing: 0.1vw;
 }
 
 .nav-container {
@@ -85,12 +85,6 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-
-
-nav ul li:hover > a {
-  color: black;
-}
-
 .logo {
   font-size: 20px;
   margin: 0;
@@ -100,6 +94,7 @@ nav ul li:hover > a {
   letter-spacing: 0.1vw;
   color: white;
   display: inline;
+}
 
 #nav:checked + .nav-open {
   transform: rotate(45deg);
@@ -164,10 +159,6 @@ nav ul li:hover > a {
   box-shadow: 4px 4px 0 rgba(125, 125, 125, 0.65);
   text-align: center;
 }
-
-/*.material-icons {
-  padding-top: 10px;
-}*/
 
 /*START OF FEATURE SECTION*/
 
@@ -302,6 +293,10 @@ div.feature-block#feature-3 .feature-text {
   width: 50%;
 }
 
+/*div.feature-block#feature-3 {
+background: #276753
+}*/
+
 /*END OF FEATURE SECTION*/
 
 .footer-outer {
@@ -410,12 +405,10 @@ div.feature-block#feature-3 .feature-text {
   text-decoration: none;
 }
 
-
 /*BREAKPOINTS:
 mobile: <= 480px
 tablet: > 480px and < = 960px
 desktop: > 960px*/
-
 
 /*IF TABLET*/
 @media (min-width: 481px) and (max-width: 960px) {
@@ -559,7 +552,7 @@ desktop: > 960px*/
   div.feature-block#feature-3 .feature-text {
     width: 80%;
 }
-
+/*@media screen and (max-width: 760px) {*/
 /*NAVIGATION ON TABLET OR MOBILE*/
   .nav-container {
     position: fixed;
@@ -635,30 +628,6 @@ desktop: > 960px*/
   }
   .nav-open i:nth-child(3) {
     margin-top: 4px;
-  }
-  #nav:checked + .nav-open {
-    transform: rotate(45deg);
-  }
-  #nav:checked + .nav-open i {
-    background: #fff;
-    transition: transform 0.2s ease;
-  }
-  #nav:checked + .nav-open i:nth-child(1) {
-    transform: translateY(6px) rotate(180deg);
-  }
-  #nav:checked + .nav-open i:nth-child(2) {
-    opacity: 0;
-  }
-  #nav:checked + .nav-open i:nth-child(3) {
-    transform: translateY(-6px) rotate(90deg);
-  }
-  #nav:checked ~ .nav-container {
-    z-index: 9990;
-    opacity: 1;
-  }
-  #nav:checked ~ .nav-container ul li a {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
