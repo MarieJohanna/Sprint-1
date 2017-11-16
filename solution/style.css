@@ -47,10 +47,13 @@ nav {
   margin: 0;
   color: white;
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
 
 }
+
+
 
 .nav-container {
   display: inline-block;
@@ -85,6 +88,12 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
+
+
+nav ul li:hover > a {
+  color: black;
+}
+
 .logo {
   font-size: 20px;
   margin: 0;
@@ -94,6 +103,7 @@ nav ul li a:hover {
   letter-spacing: 0.1vw;
   color: white;
   display: inline;
+
 }
 
 
@@ -136,12 +146,6 @@ nav ul li a:hover {
 
 /*.material-icons {
   padding-top: 10px;
-}*/
-
-/*NOT IN USE ANYMORE -- TO BE DELETED?*/
-/*main {
-  max-width: 1025px;
-  margin: auto;
 }*/
 
 /*START OF FEATURE SECTION*/
@@ -277,10 +281,6 @@ div.feature-block#feature-3 .feature-text {
   width: 50%;
 }
 
-/*div.feature-block#feature-3 {
-background: #276753
-}*/
-
 /*END OF FEATURE SECTION*/
 
 .footer-outer {
@@ -389,10 +389,12 @@ background: #276753
   text-decoration: none;
 }
 
+
 /*BREAKPOINTS:
 mobile: <= 480px
 tablet: > 480px and < = 960px
 desktop: > 960px*/
+
 
 /*IF TABLET*/
 @media (min-width: 481px) and (max-width: 960px) {
