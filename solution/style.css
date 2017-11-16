@@ -68,7 +68,6 @@ header {
 
 }
 
-
 .dropdown {
   width: 80%;
 }
@@ -112,7 +111,7 @@ nav ul li:hover {
 
 
 nav ul li:hover > a{
-    color: black;
+  color: black;
 }
 
 nav ul li:hover > ul {
@@ -176,12 +175,6 @@ nav ul ul {
 
 /*.material-icons {
   padding-top: 10px;
-}*/
-
-/*NOT IN USE ANYMORE -- TO BE DELETED?*/
-/*main {
-  max-width: 1025px;
-  margin: auto;
 }*/
 
 /*START OF FEATURE SECTION*/
@@ -317,10 +310,6 @@ div.feature-block#feature-3 .feature-text {
   width: 50%;
 }
 
-/*div.feature-block#feature-3 {
-background: #276753
-}*/
-
 /*END OF FEATURE SECTION*/
 
 .footer-outer {
@@ -429,10 +418,12 @@ background: #276753
   text-decoration: none;
 }
 
+
 /*BREAKPOINTS:
 mobile: <= 480px
 tablet: > 480px and < = 960px
 desktop: > 960px*/
+
 
 /*IF TABLET*/
 @media (min-width: 481px) and (max-width: 960px) {
