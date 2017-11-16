@@ -8,231 +8,179 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-
     <link href="https://fonts.googleapis.com/css?family=Cabin:500" rel="stylesheet">
-
     <!-- <script src="picturefill.js"></script> -->
-
     <title>HAPPY COFFEE</title>
   </head>
   <body>
 
-  <!-- start of header -->
-  <header>
-    <nav>
+    <!-- start of header -->
+    <header>
+      <nav>
 
-      <span class="logo">Happy Coffee</span>
+        <span class="logo">Happy Coffee</span>
 
-      <input type="checkbox" id="nav" class="hidden"/>
-      <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
-      <span class="nav-container">
-        <ul>
-          <li><a href="#feature-1">Coffee</a></li>
-          <li><a href="#feature-2">Tea</a></li>
-          <li><a href="#feature-3">Christmas specials</a></li>
-          <li><a href="#">About us</a></li>
-        </ul>
-      </span>
-    </nav>
+        <input type="checkbox" id="nav" class="hidden"/>
+        <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+        <span class="nav-container">
+          <ul>
+            <li><a href="#feature-1">Coffee</a></li>
+            <li><a href="#feature-2">Tea</a></li>
+            <li><a href="#feature-3">Christmas specials</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+        </span>
+      </nav>
 
     </header>
-
     <!-- end of header -->
+
     <!-- start of hero image -->
-      <div class="hero">
+    <div class="hero">
 
-          <picture>
-            <source class="hero-image" srcset="./images/AfternoonTea-480px.jpg" media="(max-width: 480px)">
-            <source class="hero-image" srcset="./images/AfternoonTea-Orginal.jpg">
-            <img class="hero-image" src="./images/AfternoonTea-Orginal.jpg" alt="Coffee that makes you happy">
-          </picture>
+      <picture>
+        <source class="hero-image" srcset="./images/AfternoonTea-480px.jpg" media="(max-width: 480px)">
+        <source class="hero-image" srcset="./images/AfternoonTea-Orginal.jpg">
+        <img class="hero-image" src="./images/AfternoonTea-Orginal.jpg" alt="Coffee that makes you happy">
+      </picture>
 
+      <!-- OLD SOLUTION -->
+      <!-- <img class="hero-image" src="https://www.grandamerica.com/wp-content/uploads/2017/05/GAH-AfternoonTea-Header-2017.jpg"
+      alt="Coffee that makes you happy"> -->
 
-        <!-- OLD SOLUTION -->
-        <!-- <img class="hero-image" src="https://www.grandamerica.com/wp-content/uploads/2017/05/GAH-AfternoonTea-Header-2017.jpg"
-        alt="Coffee that makes you happy"> -->
+    </div>
+  <!-- end of hero image -->
+
+  <!-- start of USPs -->
+    <section class="usp">
+      <div class="usp-column">
+
+        <div class="card1">
+            <a href="#feature-1">
+              <div class="usp-card">
+                <h3> Coffee will make you happy! </h3>
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </div>
+            </a>
+        </div>
+
+        <div class="card2">
+          <a href="#feature-2">
+            <div class="usp-card">
+              <h3> Tea is luxury for yourself! </h3>
+              <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+
+        <div class="card3">
+          <a href="#feature-3">
+            <div class="usp-card">
+              <h3> Try our Christmas specials! </h3>
+              <i class="fa fa-arrow-down" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+
       </div>
-    <!-- end of hero image -->
-    <!-- start of main content -->
+    </section>
+    <!-- end of USPs-->
 
+    <!-- start of Features -->
+    <section id="features-section">
 
-<main>
-    <!-- start of ups -->
-      <section class="usp">
-        <div class="usp-column">
-
-          <div class="card1">
-              <a href="#feature-1">
-                <div class="usp-card">
-                  <h3> Coffee will make you happy! </h3>
-                  <i class="fa fa-arrow-down" aria-hidden="true"></i>
-                </div>
-              </a>
-          </div>
-
-          <div class="card2">
-            <a href="#feature-2">
-              <div class="usp-card">
-                <h3> Tea is luxury for yourself! </h3>
-                <i class="fa fa-arrow-down" aria-hidden="true"></i>
-              </div>
-            </a>
-          </div>
-
-          <div class="card3">
-            <a href="#feature-3">
-              <div class="usp-card">
-                <h3> Try our Christmas specials! </h3>
-                <i class="fa fa-arrow-down" aria-hidden="true"></i>
-              </div>
-            </a>
-          </div>
-
+      <div class="feature-block" id="feature-1">
+        <!-- NOTE: ORDER OF TEXT AND IMAGE IS SET IN CSS -->
+        <div class="feature-image">
+          <!-- NOTE: IMAGE CONTENT IS SET IN CSS -->
         </div>
-      </section>
-
-    <!-- end of usp-->
-
-    <!-- </section> -->
-    <!-- end of hero and usp-->
-
-    <!-- start of main content -->
-    <main>
-
-
-      <!-- start of section 'features' -->
-      <section id="features-section">
-
-        <div class="feature-block" id="feature-1">
-          <!-- NOTE: ORDER OF TEXT AND IMAGE IS SET IN CSS -->
-          <div class="feature-image">
-            <!-- NOTE: IMAGE CONTENT IS SET IN CSS -->
-          </div>
-          <div class="feature-text">
-            <h2>Coffee will make you happy!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-            <p class="feature-btn-wrap"><a href="#" class="feature-btn">Buy now &rarr;</a></p>
-          </div>
+        <div class="feature-text">
+          <h2>Coffee will make you happy!</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <p class="feature-btn-wrap"><a href="#" class="feature-btn">Buy now &rarr;</a></p>
         </div>
+      </div>
 
-        <div class="feature-block" id="feature-2">
-          <!-- NOTE: ORDER OF TEXT AND IMAGE IS SET IN CSS -->
-          <div class="feature-image">
-            <!-- NOTE: IMAGE CONTENT IS SET IN CSS -->
-          </div>
-          <div class="feature-text">
-            <h2>Tea is luxury for yourself!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-            <p class="feature-btn-wrap"><a href="#" class="feature-btn feature-btn-variant">Buy now &rarr;</a></p>
-          </div>
+      <div class="feature-block" id="feature-2">
+        <!-- NOTE: ORDER OF TEXT AND IMAGE IS SET IN CSS -->
+        <div class="feature-image">
+          <!-- NOTE: IMAGE CONTENT IS SET IN CSS -->
         </div>
-
-        <div class="feature-block" id="feature-3">
-          <!-- NOTE: ORDER OF TEXT AND IMAGE IS SET IN CSS -->
-          <!-- NOTE: NO IMAGE -->
-          <div class="feature-text">
-            <h2>Try our Christmas specials!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-            <p class="feature-btn-wrap"><a href="#" class="feature-btn">Read more &rarr;</a></p>
-          </div>
+        <div class="feature-text">
+          <h2>Tea is luxury for yourself!</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <p class="feature-btn-wrap"><a href="#" class="feature-btn feature-btn-variant">Buy now &rarr;</a></p>
         </div>
+      </div>
 
-        <!-- <div class="feature-block" id="feature-1">
-          <div class="feature-image">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/SAS_DC-9-21_LN-RLM.jpg" alt="">
-          </div>
-          <div class="feature-text">
-            <h2>Coffee is all about <3 </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <p><a href="#" class="feature-btn">Call to action</a></p>
-          </div>
-        </div> -->
+      <div class="feature-block" id="feature-3">
+        <!-- NOTE: ORDER OF TEXT AND IMAGE IS SET IN CSS -->
+        <!-- NOTE: NO IMAGE -->
+        <div class="feature-text">
+          <h2>Try our Christmas specials!</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <p class="feature-btn-wrap"><a href="#" class="feature-btn">Read more &rarr;</a></p>
+        </div>
+      </div>
 
-        <!-- <div class="feature-block" id="feature-2">
-          <div class="feature-image">
-            <img src="https://us.123rf.com/450wm/alexraths/alexraths1410/alexraths141000108/33123965-two-glasses-of-mulled-wine-with-christmas-decoration-at-romantic-fireplace.jpg?ver=6" alt="">
-          </div>
-          <div class="feature-text">
-            <h2>Tea for two</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <p><a href="#" class="feature-btn">Call to action</a></p>
-          </div>
-        </div> -->
-
-        <!-- <div class="feature-block" id="feature-3">
-          <div class="feature-image">
-            <img src="http://www.airportspotting.com/wp-content/uploads/2012/10/SAS-DC-9-20.jpg" alt="">
-          </div>
-          <div class="feature-text">
-            <h2>Happy Christmas!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <p><a href="#" class="feature-btn">Call to action</a></p>
-          </div>
-        </div> -->
-
-      </section>
-      <!-- end of section 'features' -->
-
-    </main>
-    <!-- end of main content -->
+    </section>
+    <!-- end of Features -->
 
     <!-- start of footer -->
     <footer>
       <section class="footer-outer">
         <section class="footer-container">
           <div class="footer">
-          <h4>
-            <span>Customer Service</span>
-          </h4>
-          <div class="list">
-            <ul>
-              <li><a href="">Contact</a></li>
-              <li><a href="">Online sales</a></li>
-              <li><a href="">Delivery</a></li>
-              <li><a href="">Payments</a></li>
-              <li><a href="">Purchase Policy</a></li>
-            </ul>
-          </div>
-        </div>
-          <div class="footer">
-          <h4>
-            <span>Products</span>
-          </h4>
-          <div class="list">
-            <ul>
-              <li><a href="#feature-1">Coffee</a></li>
-              <li><a href="#feature-2">Tea</a></li>
-              <li><a href="">Tastings</a></li>
-              <li><a href="">Inspiration</a></li>
-              <li><a href="">Gifts</a></li>
-            </ul>
-          </div>
-        </div>
-          <div class="footer">
-          <h4>
-            <span>Social</span>
-          </h4>
-          <div class="list">
-            <div class="social">
-              <a href="https://www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-              <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-            <div class="sign-up">Sign up for Newsletter</br>
-              <input type="email"></br><button>Send</button>
+            <h4>
+              <span>Customer Service</span>
+            </h4>
+            <div class="list">
+              <ul>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Online sales</a></li>
+                <li><a href="">Delivery</a></li>
+                <li><a href="">Payments</a></li>
+                <li><a href="">Purchase Policy</a></li>
+              </ul>
             </div>
           </div>
-        </div>
+          <div class="footer">
+            <h4>
+              <span>Products</span>
+            </h4>
+            <div class="list">
+              <ul>
+                <li><a href="#feature-1">Coffee</a></li>
+                <li><a href="#feature-2">Tea</a></li>
+                <li><a href="">Tastings</a></li>
+                <li><a href="">Inspiration</a></li>
+                <li><a href="">Gifts</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer">
+            <h4>
+              <span>Social</span>
+            </h4>
+            <div class="list">
+              <div class="social">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </div>
+              <div class="sign-up">Sign up for Newsletter</br>
+                <input type="email"></br><button>Send</button>
+              </div>
+            </div>
+          </div>
         </section>
-     <div class="copyright">
-       <i class="fa fa-copyright" aria-hidden="true"></i><span class="footer-logo">HAPPY COFFEE AB</span>
-    </div>
-  </section>
+        <div class="copyright">
+           <i class="fa fa-copyright" aria-hidden="true"></i><span class="footer-logo">HAPPY COFFEE AB</span>
+        </div>
+      </section>
     </footer>
-
     <!-- end of footer -->
-
+    
   </body>
 </html>
