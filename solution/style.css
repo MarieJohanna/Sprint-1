@@ -49,6 +49,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  position: fixed;
 }
 
 
@@ -143,6 +144,7 @@ nav ul li:hover > a {
 .hero-image {
   width: 100%;
   background-size: cover;
+
 }
 
 /*.material-icons {
@@ -383,6 +385,7 @@ background: #276753
 .sign-up button {
   background-color: #c9ae83;
   border: none;
+  border-radius: 0;
   color: white;
   padding: 7px;
   text-align: center;
