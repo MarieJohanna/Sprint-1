@@ -332,9 +332,11 @@ background: #276753
   background-color: #ac874b;
 }
 
-.footer h3 {
+.footer h4 {
   color: white;
-  font-size: 150%;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .list {
@@ -364,7 +366,7 @@ background: #276753
 }
 
 .social i {
-  font-size: 200%;
+  font-size: 180%;
 }
 
 .social a, .copyright i {
@@ -379,7 +381,7 @@ background: #276753
   border-style: outset;
   border: none;
   background-color: #c9ae83;
-  padding: 7px 17px;
+  padding: 7px 15px;
 }
 
 .sign-up button {
@@ -639,6 +641,24 @@ desktop: > 960px*/
   .nav-open i:nth-child(3) {
     margin-top: 4px;
   }
+
+  .footer-container {
+    flex-flow: column;
+    height: auto;
+  }
+  .footer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .copyright {
+    width: 100%;
+    margin-top: 50px;
+  }
 }
 
 /*IF MOBILE*/
@@ -695,24 +715,3 @@ desktop: > 960px*/
     width: 97%;
     margin: 10% 0 10% 0;
   }
-
-  .footer-container {
-    flex-flow: column;
-    height: auto;
-  }
-
-  .footer {
-    width: 100%;
-    text-align: center;
-  }
-
-  .social {
-    justify-content: center;
-  }
-
-  .copyright {
-    width: 100%;
-    margin-top: 50px;
-  }
-
-}
