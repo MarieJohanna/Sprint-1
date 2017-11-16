@@ -383,6 +383,7 @@ background: #276753
 .sign-up button {
   background-color: #c9ae83;
   border: none;
+  border-radius: 0;
   color: white;
   padding: 7px;
   text-align: center;
