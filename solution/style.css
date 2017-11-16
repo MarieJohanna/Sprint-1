@@ -442,7 +442,7 @@ desktop: > 960px*/
   }
 
   .card1 {
-    margin: 0% 0% 0% 3%;
+    margin-left: 3%;
   }
 
   .card2 {
@@ -450,7 +450,7 @@ desktop: > 960px*/
   }
 
   .card3 {
-    margin-right: 0% 3% 0% 0%;
+    margin-right: 3%;
   }
 
   div.feature-block#feature-1 .feature-image {
@@ -502,7 +502,7 @@ desktop: > 960px*/
   }
 
   .card1 {
-    margin: 0% 0% 0% 3%;
+    margin-left: 3%;
   }
 
   .card2 {
@@ -510,7 +510,7 @@ desktop: > 960px*/
   }
 
   .card3 {
-    margin-right: 0% 3% 0% 0%;
+    margin-right: 3%;
   }
 
   /*switching the order for image/text for odd feature blocks*/
