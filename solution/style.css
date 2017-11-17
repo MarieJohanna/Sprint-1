@@ -101,6 +101,8 @@ nav ul li:hover > a {
   display: inline;
 }
 
+
+
 #nav:checked + .nav-open {
   transform: rotate(45deg);
 }
@@ -122,9 +124,14 @@ nav ul li:hover > a {
   transform: translateY(-6px) rotate(90deg);
 }
 
+.nav-container {
+  pointer-events: none;
+}
+
 #nav:checked ~ .nav-container {
   z-index: 9990;
   opacity: 1;
+  pointer-events: auto;
 }
 
 #nav:checked ~ .nav-container ul li a {
