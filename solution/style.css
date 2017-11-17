@@ -394,7 +394,7 @@ div.feature-block#feature-3 .feature-text {
   margin: 0;
   padding-bottom: 25px;
   color: white;
-  font-family: Cabin;
+  font-family: 'Cabin';
 }
 
 .copyright span {
@@ -405,7 +405,6 @@ div.feature-block#feature-3 .feature-text {
 
 .list li a:link,
 .list li a:hover,
-.list li a:active,
 .list li a:active {
   text-decoration: none;
 }
